@@ -94,7 +94,7 @@ Instead of writing:
 
 ## 🆚 Comparison
 
-<img title="Comparison" src="https://github.com/user-attachments/assets/740d10e7-3e77-48b6-a4e2-6b1e978c65c0" width="500" /> 
+<img src="https://private-user-images.githubusercontent.com/16483162/492042112-9066fdac-023d-46bb-8da2-fc7edbb49f95.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTg0NzM4NjMsIm5iZiI6MTc1ODQ3MzU2MywicGF0aCI6Ii8xNjQ4MzE2Mi80OTIwNDIxMTItOTA2NmZkYWMtMDIzZC00NmJiLThkYTItZmM3ZWRiYjQ5Zjk1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA5MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwOTIxVDE2NTI0M1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQ5MDJmMWI2YjA5ODc4MGRlM2E5YTliYjU1ZmRkMDc5OWRmN2MzMzZhNDg3OGIwMzVjYWQ5MmZmMDI1ZWNmYTImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.XpT0ljsK1x0AhKo6411CqM4LB6u3ybRB_zMdAxN0iu8" width="960" /> 
 
 Cleaner, flatter, easier to read.  
 No more bracket hell 🎉
