@@ -13,182 +13,263 @@ import 'package:flutter/services.dart';
 
 /// Chain a Widget with other widget that takes a child parameter.
 extension FlutterWidgetSkewer on Widget {
-  Widget cupertinoFormRow({Widget? prefix, EdgeInsetsGeometry? padding, Widget? helper, Widget? error,}) =>
-    CupertinoFormRow(child: this, prefix: prefix, padding: padding, helper: helper, error: error,);
+  Widget cupertinoFormRow({Key? key, Widget? prefix, EdgeInsetsGeometry? padding, Widget? helper, Widget? error,}) =>
+    CupertinoFormRow(child: this, key: key, prefix: prefix, padding: padding, helper: helper, error: error,);
 
-  Widget cupertinoTextSelectionToolbarButton({VoidCallback? onPressed,}) =>
-    CupertinoTextSelectionToolbarButton(child: this, onPressed: onPressed,);
+  Widget cupertinoTextSelectionToolbarButton({Key? key, VoidCallback? onPressed,}) =>
+    CupertinoTextSelectionToolbarButton(child: this, key: key, onPressed: onPressed,);
 
-  Widget cupertinoButton({CupertinoButtonSize sizeStyle = CupertinoButtonSize.large, EdgeInsetsGeometry? padding, Color? color, Color disabledColor = CupertinoColors.quaternarySystemFill, double? minSize, double? pressedOpacity = 0.4, BorderRadius? borderRadius, AlignmentGeometry alignment = Alignment.center, Color? focusColor, FocusNode? focusNode, ValueChanged<bool>? onFocusChange, bool autofocus = false, VoidCallback? onLongPress, required VoidCallback onPressed,}) =>
-    CupertinoButton(child: this, sizeStyle: sizeStyle, padding: padding, color: color, disabledColor: disabledColor, minSize: minSize, pressedOpacity: pressedOpacity, borderRadius: borderRadius, alignment: alignment, focusColor: focusColor, focusNode: focusNode, onFocusChange: onFocusChange, autofocus: autofocus, onLongPress: onLongPress, onPressed: onPressed,);
+  Widget cupertinoButton({Key? key, CupertinoButtonSize sizeStyle = CupertinoButtonSize.large, EdgeInsetsGeometry? padding, Color? color, Color disabledColor = CupertinoColors.quaternarySystemFill, double? minSize, double? pressedOpacity = 0.4, BorderRadius? borderRadius, AlignmentGeometry alignment = Alignment.center, Color? focusColor, FocusNode? focusNode, ValueChanged<bool>? onFocusChange, bool autofocus = false, VoidCallback? onLongPress, required VoidCallback onPressed,}) =>
+    CupertinoButton(child: this, key: key, sizeStyle: sizeStyle, padding: padding, color: color, disabledColor: disabledColor, minSize: minSize, pressedOpacity: pressedOpacity, borderRadius: borderRadius, alignment: alignment, focusColor: focusColor, focusNode: focusNode, onFocusChange: onFocusChange, autofocus: autofocus, onLongPress: onLongPress, onPressed: onPressed,);
 
-  Widget cupertinoButtontinted({CupertinoButtonSize sizeStyle = CupertinoButtonSize.large, EdgeInsetsGeometry? padding, Color? color, Color disabledColor = CupertinoColors.tertiarySystemFill, double? minSize, double? pressedOpacity = 0.4, BorderRadius? borderRadius, AlignmentGeometry alignment = Alignment.center, Color? focusColor, FocusNode? focusNode, ValueChanged<bool>? onFocusChange, bool autofocus = false, VoidCallback? onLongPress, required VoidCallback onPressed,}) =>
-    CupertinoButton.tinted(child: this, sizeStyle: sizeStyle, padding: padding, color: color, disabledColor: disabledColor, minSize: minSize, pressedOpacity: pressedOpacity, borderRadius: borderRadius, alignment: alignment, focusColor: focusColor, focusNode: focusNode, onFocusChange: onFocusChange, autofocus: autofocus, onLongPress: onLongPress, onPressed: onPressed,);
+  Widget cupertinoButtontinted({Key? key, CupertinoButtonSize sizeStyle = CupertinoButtonSize.large, EdgeInsetsGeometry? padding, Color? color, Color disabledColor = CupertinoColors.tertiarySystemFill, double? minSize, double? pressedOpacity = 0.4, BorderRadius? borderRadius, AlignmentGeometry alignment = Alignment.center, Color? focusColor, FocusNode? focusNode, ValueChanged<bool>? onFocusChange, bool autofocus = false, VoidCallback? onLongPress, required VoidCallback onPressed,}) =>
+    CupertinoButton.tinted(child: this, key: key, sizeStyle: sizeStyle, padding: padding, color: color, disabledColor: disabledColor, minSize: minSize, pressedOpacity: pressedOpacity, borderRadius: borderRadius, alignment: alignment, focusColor: focusColor, focusNode: focusNode, onFocusChange: onFocusChange, autofocus: autofocus, onLongPress: onLongPress, onPressed: onPressed,);
 
-  Widget cupertinoButtonfilled({CupertinoButtonSize sizeStyle = CupertinoButtonSize.large, EdgeInsetsGeometry? padding, Color disabledColor = CupertinoColors.tertiarySystemFill, double? minSize, double? pressedOpacity = 0.4, BorderRadius? borderRadius, AlignmentGeometry alignment = Alignment.center, Color? focusColor, FocusNode? focusNode, ValueChanged<bool>? onFocusChange, bool autofocus = false, VoidCallback? onLongPress, required VoidCallback onPressed,}) =>
-    CupertinoButton.filled(child: this, sizeStyle: sizeStyle, padding: padding, disabledColor: disabledColor, minSize: minSize, pressedOpacity: pressedOpacity, borderRadius: borderRadius, alignment: alignment, focusColor: focusColor, focusNode: focusNode, onFocusChange: onFocusChange, autofocus: autofocus, onLongPress: onLongPress, onPressed: onPressed,);
+  Widget cupertinoButtonfilled({Key? key, CupertinoButtonSize sizeStyle = CupertinoButtonSize.large, EdgeInsetsGeometry? padding, Color disabledColor = CupertinoColors.tertiarySystemFill, double? minSize, double? pressedOpacity = 0.4, BorderRadius? borderRadius, AlignmentGeometry alignment = Alignment.center, Color? focusColor, FocusNode? focusNode, ValueChanged<bool>? onFocusChange, bool autofocus = false, VoidCallback? onLongPress, required VoidCallback onPressed,}) =>
+    CupertinoButton.filled(child: this, key: key, sizeStyle: sizeStyle, padding: padding, disabledColor: disabledColor, minSize: minSize, pressedOpacity: pressedOpacity, borderRadius: borderRadius, alignment: alignment, focusColor: focusColor, focusNode: focusNode, onFocusChange: onFocusChange, autofocus: autofocus, onLongPress: onLongPress, onPressed: onPressed,);
 
-  Widget cupertinoPopupSurface({bool isSurfacePainted = true,}) =>
-    CupertinoPopupSurface(child: this, isSurfacePainted: isSurfacePainted,);
+  Widget cupertinoPopupSurface({Key? key, bool isSurfacePainted = true,}) =>
+    CupertinoPopupSurface(child: this, key: key, isSurfacePainted: isSurfacePainted,);
 
-  Widget cupertinoActionSheetAction({required VoidCallback onPressed, bool isDefaultAction = false, bool isDestructiveAction = false,}) =>
-    CupertinoActionSheetAction(child: this, onPressed: onPressed, isDefaultAction: isDefaultAction, isDestructiveAction: isDestructiveAction,);
+  Widget cupertinoActionSheetAction({Key? key, required VoidCallback onPressed, bool isDefaultAction = false, bool isDestructiveAction = false,}) =>
+    CupertinoActionSheetAction(child: this, key: key, onPressed: onPressed, isDefaultAction: isDefaultAction, isDestructiveAction: isDestructiveAction,);
 
-  Widget cupertinoDialogAction({VoidCallback? onPressed, bool isDefaultAction = false, bool isDestructiveAction = false, TextStyle? textStyle,}) =>
-    CupertinoDialogAction(child: this, onPressed: onPressed, isDefaultAction: isDefaultAction, isDestructiveAction: isDestructiveAction, textStyle: textStyle,);
+  Widget cupertinoDialogAction({Key? key, VoidCallback? onPressed, bool isDefaultAction = false, bool isDestructiveAction = false, TextStyle? textStyle,}) =>
+    CupertinoDialogAction(child: this, key: key, onPressed: onPressed, isDefaultAction: isDefaultAction, isDestructiveAction: isDestructiveAction, textStyle: textStyle,);
 
-  Widget cupertinoContextMenu({required List<Widget> actions, bool enableHapticFeedback = false,}) =>
-    CupertinoContextMenu(child: this, actions: actions, enableHapticFeedback: enableHapticFeedback,);
+  Widget cupertinoContextMenu({Key? key, required List<Widget> actions, bool enableHapticFeedback = false,}) =>
+    CupertinoContextMenu(child: this, key: key, actions: actions, enableHapticFeedback: enableHapticFeedback,);
 
-  Widget cupertinoPageTransition({required Animation<double> primaryRouteAnimation, required Animation<double> secondaryRouteAnimation, required bool linearTransition,}) =>
-    CupertinoPageTransition(child: this, primaryRouteAnimation: primaryRouteAnimation, secondaryRouteAnimation: secondaryRouteAnimation, linearTransition: linearTransition,);
+  Widget cupertinoPageTransition({Key? key, required Animation<double> primaryRouteAnimation, required Animation<double> secondaryRouteAnimation, required bool linearTransition,}) =>
+    CupertinoPageTransition(child: this, key: key, primaryRouteAnimation: primaryRouteAnimation, secondaryRouteAnimation: secondaryRouteAnimation, linearTransition: linearTransition,);
 
-  Widget cupertinoFullscreenDialogTransition({required Animation<double> primaryRouteAnimation, required Animation<double> secondaryRouteAnimation, required bool linearTransition,}) =>
-    CupertinoFullscreenDialogTransition(child: this, primaryRouteAnimation: primaryRouteAnimation, secondaryRouteAnimation: secondaryRouteAnimation, linearTransition: linearTransition,);
+  Widget cupertinoFullscreenDialogTransition({Key? key, required Animation<double> primaryRouteAnimation, required Animation<double> secondaryRouteAnimation, required bool linearTransition,}) =>
+    CupertinoFullscreenDialogTransition(child: this, key: key, primaryRouteAnimation: primaryRouteAnimation, secondaryRouteAnimation: secondaryRouteAnimation, linearTransition: linearTransition,);
 
-  Widget cupertinoPageScaffold({ObstructingPreferredSizeWidget? navigationBar, Color? backgroundColor, bool resizeToAvoidBottomInset = true,}) =>
-    CupertinoPageScaffold(child: this, navigationBar: navigationBar, backgroundColor: backgroundColor, resizeToAvoidBottomInset: resizeToAvoidBottomInset,);
+  Widget cupertinoPageScaffold({Key? key, ObstructingPreferredSizeWidget? navigationBar, Color? backgroundColor, bool resizeToAvoidBottomInset = true,}) =>
+    CupertinoPageScaffold(child: this, key: key, navigationBar: navigationBar, backgroundColor: backgroundColor, resizeToAvoidBottomInset: resizeToAvoidBottomInset,);
+
+  Widget cupertinoPageScaffoldBackgroundColor({required Color color, Key? key,}) =>
+    CupertinoPageScaffoldBackgroundColor(child: this, color: color, key: key,);
 
   Widget cupertinoUserInterfaceLevel({Key? key, required CupertinoUserInterfaceLevelData data,}) =>
     CupertinoUserInterfaceLevel(child: this, key: key, data: data,);
 
-  Widget cupertinoContextMenuAction({bool isDefaultAction = false, bool isDestructiveAction = false, VoidCallback? onPressed, IconData? trailingIcon,}) =>
-    CupertinoContextMenuAction(child: this, isDefaultAction: isDefaultAction, isDestructiveAction: isDestructiveAction, onPressed: onPressed, trailingIcon: trailingIcon,);
+  Widget cupertinoContextMenuAction({Key? key, bool isDefaultAction = false, bool isDestructiveAction = false, VoidCallback? onPressed, IconData? trailingIcon,}) =>
+    CupertinoContextMenuAction(child: this, key: key, isDefaultAction: isDefaultAction, isDestructiveAction: isDestructiveAction, onPressed: onPressed, trailingIcon: trailingIcon,);
 
-  Widget cupertinoTheme({required CupertinoThemeData data,}) =>
-    CupertinoTheme(child: this, data: data,);
+  Widget cupertinoTheme({Key? key, required CupertinoThemeData data,}) =>
+    CupertinoTheme(child: this, key: key, data: data,);
 
-  Widget cupertinoDesktopTextSelectionToolbarButton({required VoidCallback onPressed,}) =>
-    CupertinoDesktopTextSelectionToolbarButton(child: this, onPressed: onPressed,);
+  Widget inheritedCupertinoTheme({Key? key, required CupertinoTheme theme,}) =>
+    InheritedCupertinoTheme(child: this, key: key, theme: theme,);
 
-  Widget drawerHeader({Decoration? decoration, EdgeInsetsGeometry? margin = const EdgeInsets.only(bottom: 8.0), EdgeInsetsGeometry padding = const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 8.0), Duration duration = const Duration(milliseconds: 250), Curve curve = Curves.fastOutSlowIn,}) =>
-    DrawerHeader(child: this, decoration: decoration, margin: margin, padding: padding, duration: duration, curve: curve,);
+  Widget cupertinoDesktopTextSelectionToolbarButton({Key? key, required VoidCallback onPressed,}) =>
+    CupertinoDesktopTextSelectionToolbarButton(child: this, key: key, onPressed: onPressed,);
 
-  Widget materialButton({required VoidCallback onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHighlightChanged, MouseCursor? mouseCursor, ButtonTextTheme? textTheme, Color? textColor, Color? disabledTextColor, Color? color, Color? disabledColor, Color? focusColor, Color? hoverColor, Color? highlightColor, Color? splashColor, Brightness? colorBrightness, double? elevation, double? focusElevation, double? hoverElevation, double? highlightElevation, double? disabledElevation, EdgeInsetsGeometry? padding, VisualDensity? visualDensity, ShapeBorder? shape, Clip clipBehavior = Clip.none, FocusNode? focusNode, bool autofocus = false, MaterialTapTargetSize? materialTapTargetSize, Duration? animationDuration, double? minWidth, double? height, bool enableFeedback = true,}) =>
-    MaterialButton(child: this, onPressed: onPressed, onLongPress: onLongPress, onHighlightChanged: onHighlightChanged, mouseCursor: mouseCursor, textTheme: textTheme, textColor: textColor, disabledTextColor: disabledTextColor, color: color, disabledColor: disabledColor, focusColor: focusColor, hoverColor: hoverColor, highlightColor: highlightColor, splashColor: splashColor, colorBrightness: colorBrightness, elevation: elevation, focusElevation: focusElevation, hoverElevation: hoverElevation, highlightElevation: highlightElevation, disabledElevation: disabledElevation, padding: padding, visualDensity: visualDensity, shape: shape, clipBehavior: clipBehavior, focusNode: focusNode, autofocus: autofocus, materialTapTargetSize: materialTapTargetSize, animationDuration: animationDuration, minWidth: minWidth, height: height, enableFeedback: enableFeedback,);
+  Widget textButtonTheme({Key? key, required TextButtonThemeData data,}) =>
+    TextButtonTheme(child: this, key: key, data: data,);
 
-  Widget gridTile({Widget? header, Widget? footer,}) =>
-    GridTile(child: this, header: header, footer: footer,);
+  Widget drawerHeader({Key? key, Decoration? decoration, EdgeInsetsGeometry? margin = const EdgeInsets.only(bottom: 8.0), EdgeInsetsGeometry padding = const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 8.0), Duration duration = const Duration(milliseconds: 250), Curve curve = Curves.fastOutSlowIn,}) =>
+    DrawerHeader(child: this, key: key, decoration: decoration, margin: margin, padding: padding, duration: duration, curve: curve,);
 
-  Widget material({MaterialType type = MaterialType.canvas, double elevation = 0.0, Color? color, Color? shadowColor, Color? surfaceTintColor, TextStyle? textStyle, BorderRadiusGeometry? borderRadius, ShapeBorder? shape, bool borderOnForeground = true, Clip clipBehavior = Clip.none, Duration animationDuration = kThemeChangeDuration,}) =>
-    Material(child: this, type: type, elevation: elevation, color: color, shadowColor: shadowColor, surfaceTintColor: surfaceTintColor, textStyle: textStyle, borderRadius: borderRadius, shape: shape, borderOnForeground: borderOnForeground, clipBehavior: clipBehavior, animationDuration: animationDuration,);
+  Widget progressIndicatorTheme({Key? key, required ProgressIndicatorThemeData data,}) =>
+    ProgressIndicatorTheme(child: this, key: key, data: data,);
 
-  Widget selectionArea({FocusNode? focusNode, TextSelectionControls? selectionControls, SelectableRegionContextMenuBuilder? contextMenuBuilder = _defaultContextMenuBuilder, TextMagnifierConfiguration? magnifierConfiguration, ValueChanged<SelectedContent?>? onSelectionChanged,}) =>
-    SelectionArea(child: this, focusNode: focusNode, selectionControls: selectionControls, contextMenuBuilder: contextMenuBuilder, magnifierConfiguration: magnifierConfiguration, onSelectionChanged: onSelectionChanged,);
+  Widget materialButton({Key? key, required VoidCallback onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHighlightChanged, MouseCursor? mouseCursor, ButtonTextTheme? textTheme, Color? textColor, Color? disabledTextColor, Color? color, Color? disabledColor, Color? focusColor, Color? hoverColor, Color? highlightColor, Color? splashColor, Brightness? colorBrightness, double? elevation, double? focusElevation, double? hoverElevation, double? highlightElevation, double? disabledElevation, EdgeInsetsGeometry? padding, VisualDensity? visualDensity, ShapeBorder? shape, Clip clipBehavior = Clip.none, FocusNode? focusNode, bool autofocus = false, MaterialTapTargetSize? materialTapTargetSize, Duration? animationDuration, double? minWidth, double? height, bool enableFeedback = true,}) =>
+    MaterialButton(child: this, key: key, onPressed: onPressed, onLongPress: onLongPress, onHighlightChanged: onHighlightChanged, mouseCursor: mouseCursor, textTheme: textTheme, textColor: textColor, disabledTextColor: disabledTextColor, color: color, disabledColor: disabledColor, focusColor: focusColor, hoverColor: hoverColor, highlightColor: highlightColor, splashColor: splashColor, colorBrightness: colorBrightness, elevation: elevation, focusElevation: focusElevation, hoverElevation: hoverElevation, highlightElevation: highlightElevation, disabledElevation: disabledElevation, padding: padding, visualDensity: visualDensity, shape: shape, clipBehavior: clipBehavior, focusNode: focusNode, autofocus: autofocus, materialTapTargetSize: materialTapTargetSize, animationDuration: animationDuration, minWidth: minWidth, height: height, enableFeedback: enableFeedback,);
 
-  Widget scaffoldMessenger() =>
-    ScaffoldMessenger(child: this,);
+  Widget gridTile({Key? key, Widget? header, Widget? footer,}) =>
+    GridTile(child: this, key: key, header: header, footer: footer,);
 
-  Widget textSelectionToolbarTextButton({required EdgeInsets padding, VoidCallback? onPressed, AlignmentGeometry? alignment,}) =>
-    TextSelectionToolbarTextButton(child: this, padding: padding, onPressed: onPressed, alignment: alignment,);
+  Widget material({Key? key, MaterialType type = MaterialType.canvas, double elevation = 0.0, Color? color, Color? shadowColor, Color? surfaceTintColor, TextStyle? textStyle, BorderRadiusGeometry? borderRadius, ShapeBorder? shape, bool borderOnForeground = true, Clip clipBehavior = Clip.none, Duration animationDuration = kThemeChangeDuration,}) =>
+    Material(child: this, key: key, type: type, elevation: elevation, color: color, shadowColor: shadowColor, surfaceTintColor: surfaceTintColor, textStyle: textStyle, borderRadius: borderRadius, shape: shape, borderOnForeground: borderOnForeground, clipBehavior: clipBehavior, animationDuration: animationDuration,);
 
-  Widget aboutListTile({Widget? icon, String? applicationName, String? applicationVersion, Widget? applicationIcon, String? applicationLegalese, List<Widget>? aboutBoxChildren, bool? dense,}) =>
-    AboutListTile(child: this, icon: icon, applicationName: applicationName, applicationVersion: applicationVersion, applicationIcon: applicationIcon, applicationLegalese: applicationLegalese, aboutBoxChildren: aboutBoxChildren, dense: dense,);
+  Widget selectionArea({Key? key, FocusNode? focusNode, TextSelectionControls? selectionControls, SelectableRegionContextMenuBuilder? contextMenuBuilder = _defaultContextMenuBuilder, TextMagnifierConfiguration? magnifierConfiguration, ValueChanged<SelectedContent?>? onSelectionChanged,}) =>
+    SelectionArea(child: this, key: key, focusNode: focusNode, selectionControls: selectionControls, contextMenuBuilder: contextMenuBuilder, magnifierConfiguration: magnifierConfiguration, onSelectionChanged: onSelectionChanged,);
 
-  Widget textSelectionTheme({required TextSelectionThemeData data,}) =>
-    TextSelectionTheme(child: this, data: data,);
+  Widget datePickerTheme({Key? key, required DatePickerThemeData data,}) =>
+    DatePickerTheme(child: this, key: key, data: data,);
 
-  Widget refreshIndicator({double displacement = 40.0, double edgeOffset = 0.0, required m.RefreshCallback onRefresh, Color? color, Color? backgroundColor, ScrollNotificationPredicate notificationPredicate = defaultScrollNotificationPredicate, String? semanticsLabel, String? semanticsValue, double strokeWidth = RefreshProgressIndicator.defaultStrokeWidth, RefreshIndicatorTriggerMode triggerMode = RefreshIndicatorTriggerMode.onEdge, double elevation = 2.0,}) =>
-    RefreshIndicator(child: this, displacement: displacement, edgeOffset: edgeOffset, onRefresh: onRefresh, color: color, backgroundColor: backgroundColor, notificationPredicate: notificationPredicate, semanticsLabel: semanticsLabel, semanticsValue: semanticsValue, strokeWidth: strokeWidth, triggerMode: triggerMode, elevation: elevation,);
+  Widget elevatedButtonTheme({Key? key, required ElevatedButtonThemeData data,}) =>
+    ElevatedButtonTheme(child: this, key: key, data: data,);
 
-  Widget refreshIndicatoradaptive({double displacement = 40.0, double edgeOffset = 0.0, required m.RefreshCallback onRefresh, Color? color, Color? backgroundColor, ScrollNotificationPredicate notificationPredicate = defaultScrollNotificationPredicate, String? semanticsLabel, String? semanticsValue, double strokeWidth = RefreshProgressIndicator.defaultStrokeWidth, RefreshIndicatorTriggerMode triggerMode = RefreshIndicatorTriggerMode.onEdge, double elevation = 2.0,}) =>
-    RefreshIndicator.adaptive(child: this, displacement: displacement, edgeOffset: edgeOffset, onRefresh: onRefresh, color: color, backgroundColor: backgroundColor, notificationPredicate: notificationPredicate, semanticsLabel: semanticsLabel, semanticsValue: semanticsValue, strokeWidth: strokeWidth, triggerMode: triggerMode, elevation: elevation,);
+  Widget materialBannerTheme({Key? key, MaterialBannerThemeData? data,}) =>
+    MaterialBannerTheme(child: this, key: key, data: data,);
 
-  Widget refreshIndicatornoSpinner({required m.RefreshCallback onRefresh, ValueChanged<RefreshIndicatorStatus?>? onStatusChange, ScrollNotificationPredicate notificationPredicate = defaultScrollNotificationPredicate, String? semanticsLabel, String? semanticsValue, RefreshIndicatorTriggerMode triggerMode = RefreshIndicatorTriggerMode.onEdge, double elevation = 2.0,}) =>
-    RefreshIndicator.noSpinner(child: this, onRefresh: onRefresh, onStatusChange: onStatusChange, notificationPredicate: notificationPredicate, semanticsLabel: semanticsLabel, semanticsValue: semanticsValue, triggerMode: triggerMode, elevation: elevation,);
+  Widget scaffoldMessenger({Key? key,}) =>
+    ScaffoldMessenger(child: this, key: key,);
 
-  Widget tabBarTheme({Decoration? indicator, Color? indicatorColor, TabBarIndicatorSize? indicatorSize, Color? dividerColor, double? dividerHeight, Color? labelColor, EdgeInsetsGeometry? labelPadding, TextStyle? labelStyle, Color? unselectedLabelColor, TextStyle? unselectedLabelStyle, WidgetStateProperty<Color?>? overlayColor, InteractiveInkFeatureFactory? splashFactory, WidgetStateProperty<MouseCursor?>? mouseCursor, TabAlignment? tabAlignment, TextScaler? textScaler, TabIndicatorAnimation? indicatorAnimation, TabBarThemeData? data,}) =>
-    TabBarTheme(child: this, indicator: indicator, indicatorColor: indicatorColor, indicatorSize: indicatorSize, dividerColor: dividerColor, dividerHeight: dividerHeight, labelColor: labelColor, labelPadding: labelPadding, labelStyle: labelStyle, unselectedLabelColor: unselectedLabelColor, unselectedLabelStyle: unselectedLabelStyle, overlayColor: overlayColor, splashFactory: splashFactory, mouseCursor: mouseCursor, tabAlignment: tabAlignment, textScaler: textScaler, indicatorAnimation: indicatorAnimation, data: data,);
+  Widget switchTheme({Key? key, required SwitchThemeData data,}) =>
+    SwitchTheme(child: this, key: key, data: data,);
 
-  Widget circleAvatar({Color? backgroundColor, ImageProvider? backgroundImage, ImageProvider? foregroundImage, ImageErrorListener? onBackgroundImageError, ImageErrorListener? onForegroundImageError, Color? foregroundColor, double? radius, double? minRadius, double? maxRadius,}) =>
-    CircleAvatar(child: this, backgroundColor: backgroundColor, backgroundImage: backgroundImage, foregroundImage: foregroundImage, onBackgroundImageError: onBackgroundImageError, onForegroundImageError: onForegroundImageError, foregroundColor: foregroundColor, radius: radius, minRadius: minRadius, maxRadius: maxRadius,);
+  Widget menuTheme({Key? key, required MenuThemeData data,}) =>
+    MenuTheme(child: this, key: key, data: data,);
 
-  Widget ink({EdgeInsetsGeometry? padding, Color? color, Decoration? decoration, double? width, double? height,}) =>
-    Ink(child: this, padding: padding, color: color, decoration: decoration, width: width, height: height,);
+  Widget toggleButtonsTheme({Key? key, required ToggleButtonsThemeData data,}) =>
+    ToggleButtonsTheme(child: this, key: key, data: data,);
 
-  Widget inkimage({EdgeInsetsGeometry? padding, required ImageProvider image, ImageErrorListener? onImageError, ColorFilter? colorFilter, BoxFit? fit, AlignmentGeometry alignment = Alignment.center, Rect? centerSlice, ImageRepeat repeat = ImageRepeat.noRepeat, bool matchTextDirection = false, double? width, double? height,}) =>
-    Ink.image(child: this, padding: padding, image: image, onImageError: onImageError, colorFilter: colorFilter, fit: fit, alignment: alignment, centerSlice: centerSlice, repeat: repeat, matchTextDirection: matchTextDirection, width: width, height: height,);
+  Widget textSelectionToolbarTextButton({Key? key, required EdgeInsets padding, VoidCallback? onPressed, AlignmentGeometry? alignment,}) =>
+    TextSelectionToolbarTextButton(child: this, key: key, padding: padding, onPressed: onPressed, alignment: alignment,);
 
-  Widget badge({Color? backgroundColor, Color? textColor, double? smallSize, double? largeSize, TextStyle? textStyle, EdgeInsetsGeometry? padding, AlignmentGeometry? alignment, Offset? offset, Widget? label, bool isLabelVisible = true,}) =>
-    Badge(child: this, backgroundColor: backgroundColor, textColor: textColor, smallSize: smallSize, largeSize: largeSize, textStyle: textStyle, padding: padding, alignment: alignment, offset: offset, label: label, isLabelVisible: isLabelVisible,);
+  Widget drawerTheme({Key? key, required DrawerThemeData data,}) =>
+    DrawerTheme(child: this, key: key, data: data,);
 
-  Widget badgecount({Color? backgroundColor, Color? textColor, double? smallSize, double? largeSize, TextStyle? textStyle, EdgeInsetsGeometry? padding, AlignmentGeometry? alignment, Offset? offset, required int count, bool isLabelVisible = true,}) =>
-    Badge.count(child: this, backgroundColor: backgroundColor, textColor: textColor, smallSize: smallSize, largeSize: largeSize, textStyle: textStyle, padding: padding, alignment: alignment, offset: offset, count: count, isLabelVisible: isLabelVisible,);
+  Widget actionIconTheme({Key? key, required ActionIconThemeData data,}) =>
+    ActionIconTheme(child: this, key: key, data: data,);
 
-  Widget inputDecorator({required InputDecoration decoration, TextStyle? baseStyle, TextAlign? textAlign, TextAlignVertical? textAlignVertical, bool isFocused = false, bool isHovering = false, bool expands = false, bool isEmpty = false,}) =>
-    InputDecorator(child: this, decoration: decoration, baseStyle: baseStyle, textAlign: textAlign, textAlignVertical: textAlignVertical, isFocused: isFocused, isHovering: isHovering, expands: expands, isEmpty: isEmpty,);
+  Widget navigationRailTheme({Key? key, required NavigationRailThemeData data,}) =>
+    NavigationRailTheme(child: this, key: key, data: data,);
 
-  Widget menuAnchor({MenuController? controller, FocusNode? childFocusNode, MenuStyle? style, Offset? alignmentOffset = Offset.zero, LayerLink? layerLink, Clip clipBehavior = Clip.hardEdge, bool anchorTapClosesMenu = false, bool consumeOutsideTap = false, VoidCallback? onOpen, VoidCallback? onClose, bool crossAxisUnconstrained = true, required List<Widget> menuChildren, MenuAnchorChildBuilder? builder,}) =>
-    MenuAnchor(child: this, controller: controller, childFocusNode: childFocusNode, style: style, alignmentOffset: alignmentOffset, layerLink: layerLink, clipBehavior: clipBehavior, anchorTapClosesMenu: anchorTapClosesMenu, consumeOutsideTap: consumeOutsideTap, onOpen: onOpen, onClose: onClose, crossAxisUnconstrained: crossAxisUnconstrained, menuChildren: menuChildren, builder: builder,);
+  Widget searchViewTheme({Key? key, required SearchViewThemeData data,}) =>
+    SearchViewTheme(child: this, key: key, data: data,);
 
-  Widget menuItemButton({VoidCallback? onPressed, ValueChanged<bool>? onHover, bool requestFocusOnHover = true, ValueChanged<bool>? onFocusChange, FocusNode? focusNode, bool autofocus = false, MenuSerializableShortcut? shortcut, String? semanticsLabel, ButtonStyle? style, MaterialStatesController? statesController, Clip clipBehavior = Clip.none, Widget? leadingIcon, Widget? trailingIcon, bool closeOnActivate = true, Axis overflowAxis = Axis.horizontal,}) =>
-    MenuItemButton(child: this, onPressed: onPressed, onHover: onHover, requestFocusOnHover: requestFocusOnHover, onFocusChange: onFocusChange, focusNode: focusNode, autofocus: autofocus, shortcut: shortcut, semanticsLabel: semanticsLabel, style: style, statesController: statesController, clipBehavior: clipBehavior, leadingIcon: leadingIcon, trailingIcon: trailingIcon, closeOnActivate: closeOnActivate, overflowAxis: overflowAxis,);
+  Widget aboutListTile({Key? key, Widget? icon, String? applicationName, String? applicationVersion, Widget? applicationIcon, String? applicationLegalese, List<Widget>? aboutBoxChildren, bool? dense,}) =>
+    AboutListTile(child: this, key: key, icon: icon, applicationName: applicationName, applicationVersion: applicationVersion, applicationIcon: applicationIcon, applicationLegalese: applicationLegalese, aboutBoxChildren: aboutBoxChildren, dense: dense,);
 
-  Widget checkboxMenuButton({required bool value, bool tristate = false, bool isError = false, required ValueChanged<bool?> onChanged, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, FocusNode? focusNode, MenuSerializableShortcut? shortcut, ButtonStyle? style, MaterialStatesController? statesController, Clip clipBehavior = Clip.none, Widget? trailingIcon, bool closeOnActivate = true,}) =>
-    CheckboxMenuButton(child: this, value: value, tristate: tristate, isError: isError, onChanged: onChanged, onHover: onHover, onFocusChange: onFocusChange, focusNode: focusNode, shortcut: shortcut, style: style, statesController: statesController, clipBehavior: clipBehavior, trailingIcon: trailingIcon, closeOnActivate: closeOnActivate,);
+  Widget timePickerTheme({Key? key, required TimePickerThemeData data,}) =>
+    TimePickerTheme(child: this, key: key, data: data,);
 
-  Widget radioMenuButton<T>({required T value, required T groupValue, required ValueChanged<T?> onChanged, bool toggleable = false, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, FocusNode? focusNode, MenuSerializableShortcut? shortcut, ButtonStyle? style, MaterialStatesController? statesController, Clip clipBehavior = Clip.none, Widget? trailingIcon, bool closeOnActivate = true,}) =>
-    RadioMenuButton(child: this, value: value, groupValue: groupValue, onChanged: onChanged, toggleable: toggleable, onHover: onHover, onFocusChange: onFocusChange, focusNode: focusNode, shortcut: shortcut, style: style, statesController: statesController, clipBehavior: clipBehavior, trailingIcon: trailingIcon, closeOnActivate: closeOnActivate,);
+  Widget textSelectionTheme({Key? key, required TextSelectionThemeData data,}) =>
+    TextSelectionTheme(child: this, key: key, data: data,);
 
-  Widget submenuButton({ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, VoidCallback? onOpen, VoidCallback? onClose, MenuController? controller, ButtonStyle? style, MenuStyle? menuStyle, Offset? alignmentOffset, Clip clipBehavior = Clip.hardEdge, FocusNode? focusNode, MaterialStatesController? statesController, Widget? leadingIcon, Widget? trailingIcon, required List<Widget> menuChildren,}) =>
-    SubmenuButton(child: this, onHover: onHover, onFocusChange: onFocusChange, onOpen: onOpen, onClose: onClose, controller: controller, style: style, menuStyle: menuStyle, alignmentOffset: alignmentOffset, clipBehavior: clipBehavior, focusNode: focusNode, statesController: statesController, leadingIcon: leadingIcon, trailingIcon: trailingIcon, menuChildren: menuChildren,);
+  Widget dropdownMenuTheme({Key? key, required DropdownMenuThemeData data,}) =>
+    DropdownMenuTheme(child: this, key: key, data: data,);
 
-  Widget card({Color? color, Color? shadowColor, Color? surfaceTintColor, double? elevation, ShapeBorder? shape, bool borderOnForeground = true, EdgeInsetsGeometry? margin, Clip? clipBehavior, bool semanticContainer = true,}) =>
-    Card(child: this, color: color, shadowColor: shadowColor, surfaceTintColor: surfaceTintColor, elevation: elevation, shape: shape, borderOnForeground: borderOnForeground, margin: margin, clipBehavior: clipBehavior, semanticContainer: semanticContainer,);
+  Widget refreshIndicator({Key? key, double displacement = 40.0, double edgeOffset = 0.0, required m.RefreshCallback onRefresh, Color? color, Color? backgroundColor, ScrollNotificationPredicate notificationPredicate = defaultScrollNotificationPredicate, String? semanticsLabel, String? semanticsValue, double strokeWidth = RefreshProgressIndicator.defaultStrokeWidth, RefreshIndicatorTriggerMode triggerMode = RefreshIndicatorTriggerMode.onEdge, double elevation = 2.0,}) =>
+    RefreshIndicator(child: this, key: key, displacement: displacement, edgeOffset: edgeOffset, onRefresh: onRefresh, color: color, backgroundColor: backgroundColor, notificationPredicate: notificationPredicate, semanticsLabel: semanticsLabel, semanticsValue: semanticsValue, strokeWidth: strokeWidth, triggerMode: triggerMode, elevation: elevation,);
 
-  Widget cardfilled({Color? color, Color? shadowColor, Color? surfaceTintColor, double? elevation, ShapeBorder? shape, bool borderOnForeground = true, EdgeInsetsGeometry? margin, Clip? clipBehavior, bool semanticContainer = true,}) =>
-    Card.filled(child: this, color: color, shadowColor: shadowColor, surfaceTintColor: surfaceTintColor, elevation: elevation, shape: shape, borderOnForeground: borderOnForeground, margin: margin, clipBehavior: clipBehavior, semanticContainer: semanticContainer,);
+  Widget refreshIndicatoradaptive({Key? key, double displacement = 40.0, double edgeOffset = 0.0, required m.RefreshCallback onRefresh, Color? color, Color? backgroundColor, ScrollNotificationPredicate notificationPredicate = defaultScrollNotificationPredicate, String? semanticsLabel, String? semanticsValue, double strokeWidth = RefreshProgressIndicator.defaultStrokeWidth, RefreshIndicatorTriggerMode triggerMode = RefreshIndicatorTriggerMode.onEdge, double elevation = 2.0,}) =>
+    RefreshIndicator.adaptive(child: this, key: key, displacement: displacement, edgeOffset: edgeOffset, onRefresh: onRefresh, color: color, backgroundColor: backgroundColor, notificationPredicate: notificationPredicate, semanticsLabel: semanticsLabel, semanticsValue: semanticsValue, strokeWidth: strokeWidth, triggerMode: triggerMode, elevation: elevation,);
 
-  Widget cardoutlined({Color? color, Color? shadowColor, Color? surfaceTintColor, double? elevation, ShapeBorder? shape, bool borderOnForeground = true, EdgeInsetsGeometry? margin, Clip? clipBehavior, bool semanticContainer = true,}) =>
-    Card.outlined(child: this, color: color, shadowColor: shadowColor, surfaceTintColor: surfaceTintColor, elevation: elevation, shape: shape, borderOnForeground: borderOnForeground, margin: margin, clipBehavior: clipBehavior, semanticContainer: semanticContainer,);
+  Widget refreshIndicatornoSpinner({Key? key, required m.RefreshCallback onRefresh, ValueChanged<RefreshIndicatorStatus?>? onStatusChange, ScrollNotificationPredicate notificationPredicate = defaultScrollNotificationPredicate, String? semanticsLabel, String? semanticsValue, RefreshIndicatorTriggerMode triggerMode = RefreshIndicatorTriggerMode.onEdge, double elevation = 2.0,}) =>
+    RefreshIndicator.noSpinner(child: this, key: key, onRefresh: onRefresh, onStatusChange: onStatusChange, notificationPredicate: notificationPredicate, semanticsLabel: semanticsLabel, semanticsValue: semanticsValue, triggerMode: triggerMode, elevation: elevation,);
 
-  Widget rawMaterialButton({required VoidCallback onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHighlightChanged, MouseCursor? mouseCursor, TextStyle? textStyle, Color? fillColor, Color? focusColor, Color? hoverColor, Color? highlightColor, Color? splashColor, double elevation = 2.0, double focusElevation = 4.0, double hoverElevation = 4.0, double highlightElevation = 8.0, double disabledElevation = 0.0, EdgeInsetsGeometry padding = EdgeInsets.zero, VisualDensity visualDensity = VisualDensity.standard, BoxConstraints constraints = const BoxConstraints(minWidth: 88.0, minHeight: 36.0), ShapeBorder shape = const RoundedRectangleBorder(), Duration animationDuration = kThemeChangeDuration, Clip clipBehavior = Clip.none, FocusNode? focusNode, bool autofocus = false, MaterialTapTargetSize? materialTapTargetSize, bool enableFeedback = true,}) =>
-    RawMaterialButton(child: this, onPressed: onPressed, onLongPress: onLongPress, onHighlightChanged: onHighlightChanged, mouseCursor: mouseCursor, textStyle: textStyle, fillColor: fillColor, focusColor: focusColor, hoverColor: hoverColor, highlightColor: highlightColor, splashColor: splashColor, elevation: elevation, focusElevation: focusElevation, hoverElevation: hoverElevation, highlightElevation: highlightElevation, disabledElevation: disabledElevation, padding: padding, visualDensity: visualDensity, constraints: constraints, shape: shape, animationDuration: animationDuration, clipBehavior: clipBehavior, focusNode: focusNode, autofocus: autofocus, materialTapTargetSize: materialTapTargetSize, enableFeedback: enableFeedback,);
+  Widget tabBarTheme({Key? key, Decoration? indicator, Color? indicatorColor, TabBarIndicatorSize? indicatorSize, Color? dividerColor, double? dividerHeight, Color? labelColor, EdgeInsetsGeometry? labelPadding, TextStyle? labelStyle, Color? unselectedLabelColor, TextStyle? unselectedLabelStyle, WidgetStateProperty<Color?>? overlayColor, InteractiveInkFeatureFactory? splashFactory, WidgetStateProperty<MouseCursor?>? mouseCursor, TabAlignment? tabAlignment, TextScaler? textScaler, TabIndicatorAnimation? indicatorAnimation, TabBarThemeData? data,}) =>
+    TabBarTheme(child: this, key: key, indicator: indicator, indicatorColor: indicatorColor, indicatorSize: indicatorSize, dividerColor: dividerColor, dividerHeight: dividerHeight, labelColor: labelColor, labelPadding: labelPadding, labelStyle: labelStyle, unselectedLabelColor: unselectedLabelColor, unselectedLabelStyle: unselectedLabelStyle, overlayColor: overlayColor, splashFactory: splashFactory, mouseCursor: mouseCursor, tabAlignment: tabAlignment, textScaler: textScaler, indicatorAnimation: indicatorAnimation, data: data,);
+
+  Widget outlinedButtonTheme({Key? key, required OutlinedButtonThemeData data,}) =>
+    OutlinedButtonTheme(child: this, key: key, data: data,);
+
+  Widget listTileTheme({Key? key, ListTileThemeData? data, bool? dense, ShapeBorder? shape, ListTileStyle? style, Color? selectedColor, Color? iconColor, Color? textColor, EdgeInsetsGeometry? contentPadding, Color? tileColor, Color? selectedTileColor, bool? enableFeedback, MaterialStateProperty<MouseCursor?>? mouseCursor, double? horizontalTitleGap, double? minVerticalPadding, double? minLeadingWidth, ListTileControlAffinity? controlAffinity,}) =>
+    ListTileTheme(child: this, key: key, data: data, dense: dense, shape: shape, style: style, selectedColor: selectedColor, iconColor: iconColor, textColor: textColor, contentPadding: contentPadding, tileColor: tileColor, selectedTileColor: selectedTileColor, enableFeedback: enableFeedback, mouseCursor: mouseCursor, horizontalTitleGap: horizontalTitleGap, minVerticalPadding: minVerticalPadding, minLeadingWidth: minLeadingWidth, controlAffinity: controlAffinity,);
+
+  Widget circleAvatar({Key? key, Color? backgroundColor, ImageProvider? backgroundImage, ImageProvider? foregroundImage, ImageErrorListener? onBackgroundImageError, ImageErrorListener? onForegroundImageError, Color? foregroundColor, double? radius, double? minRadius, double? maxRadius,}) =>
+    CircleAvatar(child: this, key: key, backgroundColor: backgroundColor, backgroundImage: backgroundImage, foregroundImage: foregroundImage, onBackgroundImageError: onBackgroundImageError, onForegroundImageError: onForegroundImageError, foregroundColor: foregroundColor, radius: radius, minRadius: minRadius, maxRadius: maxRadius,);
+
+  Widget ink({Key? key, EdgeInsetsGeometry? padding, Color? color, Decoration? decoration, double? width, double? height,}) =>
+    Ink(child: this, key: key, padding: padding, color: color, decoration: decoration, width: width, height: height,);
+
+  Widget inkimage({Key? key, EdgeInsetsGeometry? padding, required ImageProvider image, ImageErrorListener? onImageError, ColorFilter? colorFilter, BoxFit? fit, AlignmentGeometry alignment = Alignment.center, Rect? centerSlice, ImageRepeat repeat = ImageRepeat.noRepeat, bool matchTextDirection = false, double? width, double? height,}) =>
+    Ink.image(child: this, key: key, padding: padding, image: image, onImageError: onImageError, colorFilter: colorFilter, fit: fit, alignment: alignment, centerSlice: centerSlice, repeat: repeat, matchTextDirection: matchTextDirection, width: width, height: height,);
+
+  Widget badge({Key? key, Color? backgroundColor, Color? textColor, double? smallSize, double? largeSize, TextStyle? textStyle, EdgeInsetsGeometry? padding, AlignmentGeometry? alignment, Offset? offset, Widget? label, bool isLabelVisible = true,}) =>
+    Badge(child: this, key: key, backgroundColor: backgroundColor, textColor: textColor, smallSize: smallSize, largeSize: largeSize, textStyle: textStyle, padding: padding, alignment: alignment, offset: offset, label: label, isLabelVisible: isLabelVisible,);
+
+  Widget badgecount({Key? key, Color? backgroundColor, Color? textColor, double? smallSize, double? largeSize, TextStyle? textStyle, EdgeInsetsGeometry? padding, AlignmentGeometry? alignment, Offset? offset, required int count, bool isLabelVisible = true,}) =>
+    Badge.count(child: this, key: key, backgroundColor: backgroundColor, textColor: textColor, smallSize: smallSize, largeSize: largeSize, textStyle: textStyle, padding: padding, alignment: alignment, offset: offset, count: count, isLabelVisible: isLabelVisible,);
+
+  Widget inputDecorator({Key? key, required InputDecoration decoration, TextStyle? baseStyle, TextAlign? textAlign, TextAlignVertical? textAlignVertical, bool isFocused = false, bool isHovering = false, bool expands = false, bool isEmpty = false,}) =>
+    InputDecorator(child: this, key: key, decoration: decoration, baseStyle: baseStyle, textAlign: textAlign, textAlignVertical: textAlignVertical, isFocused: isFocused, isHovering: isHovering, expands: expands, isEmpty: isEmpty,);
+
+  Widget badgeTheme({Key? key, required BadgeThemeData data,}) =>
+    BadgeTheme(child: this, key: key, data: data,);
+
+  Widget menuAnchor({Key? key, MenuController? controller, FocusNode? childFocusNode, MenuStyle? style, Offset? alignmentOffset = Offset.zero, LayerLink? layerLink, Clip clipBehavior = Clip.hardEdge, bool anchorTapClosesMenu = false, bool consumeOutsideTap = false, VoidCallback? onOpen, VoidCallback? onClose, bool crossAxisUnconstrained = true, required List<Widget> menuChildren, MenuAnchorChildBuilder? builder,}) =>
+    MenuAnchor(child: this, key: key, controller: controller, childFocusNode: childFocusNode, style: style, alignmentOffset: alignmentOffset, layerLink: layerLink, clipBehavior: clipBehavior, anchorTapClosesMenu: anchorTapClosesMenu, consumeOutsideTap: consumeOutsideTap, onOpen: onOpen, onClose: onClose, crossAxisUnconstrained: crossAxisUnconstrained, menuChildren: menuChildren, builder: builder,);
+
+  Widget menuItemButton({Key? key, VoidCallback? onPressed, ValueChanged<bool>? onHover, bool requestFocusOnHover = true, ValueChanged<bool>? onFocusChange, FocusNode? focusNode, bool autofocus = false, MenuSerializableShortcut? shortcut, String? semanticsLabel, ButtonStyle? style, MaterialStatesController? statesController, Clip clipBehavior = Clip.none, Widget? leadingIcon, Widget? trailingIcon, bool closeOnActivate = true, Axis overflowAxis = Axis.horizontal,}) =>
+    MenuItemButton(child: this, key: key, onPressed: onPressed, onHover: onHover, requestFocusOnHover: requestFocusOnHover, onFocusChange: onFocusChange, focusNode: focusNode, autofocus: autofocus, shortcut: shortcut, semanticsLabel: semanticsLabel, style: style, statesController: statesController, clipBehavior: clipBehavior, leadingIcon: leadingIcon, trailingIcon: trailingIcon, closeOnActivate: closeOnActivate, overflowAxis: overflowAxis,);
+
+  Widget checkboxMenuButton({Key? key, required bool value, bool tristate = false, bool isError = false, required ValueChanged<bool?> onChanged, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, FocusNode? focusNode, MenuSerializableShortcut? shortcut, ButtonStyle? style, MaterialStatesController? statesController, Clip clipBehavior = Clip.none, Widget? trailingIcon, bool closeOnActivate = true,}) =>
+    CheckboxMenuButton(child: this, key: key, value: value, tristate: tristate, isError: isError, onChanged: onChanged, onHover: onHover, onFocusChange: onFocusChange, focusNode: focusNode, shortcut: shortcut, style: style, statesController: statesController, clipBehavior: clipBehavior, trailingIcon: trailingIcon, closeOnActivate: closeOnActivate,);
+
+  Widget radioMenuButton<T>({Key? key, required T value, required T groupValue, required ValueChanged<T?> onChanged, bool toggleable = false, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, FocusNode? focusNode, MenuSerializableShortcut? shortcut, ButtonStyle? style, MaterialStatesController? statesController, Clip clipBehavior = Clip.none, Widget? trailingIcon, bool closeOnActivate = true,}) =>
+    RadioMenuButton(child: this, key: key, value: value, groupValue: groupValue, onChanged: onChanged, toggleable: toggleable, onHover: onHover, onFocusChange: onFocusChange, focusNode: focusNode, shortcut: shortcut, style: style, statesController: statesController, clipBehavior: clipBehavior, trailingIcon: trailingIcon, closeOnActivate: closeOnActivate,);
+
+  Widget submenuButton({Key? key, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, VoidCallback? onOpen, VoidCallback? onClose, MenuController? controller, ButtonStyle? style, MenuStyle? menuStyle, Offset? alignmentOffset, Clip clipBehavior = Clip.hardEdge, FocusNode? focusNode, MaterialStatesController? statesController, Widget? leadingIcon, Widget? trailingIcon, required List<Widget> menuChildren,}) =>
+    SubmenuButton(child: this, key: key, onHover: onHover, onFocusChange: onFocusChange, onOpen: onOpen, onClose: onClose, controller: controller, style: style, menuStyle: menuStyle, alignmentOffset: alignmentOffset, clipBehavior: clipBehavior, focusNode: focusNode, statesController: statesController, leadingIcon: leadingIcon, trailingIcon: trailingIcon, menuChildren: menuChildren,);
+
+  Widget menuAcceleratorCallbackBinding({Key? key, VoidCallback? onInvoke, bool hasSubmenu = false,}) =>
+    MenuAcceleratorCallbackBinding(child: this, key: key, onInvoke: onInvoke, hasSubmenu: hasSubmenu,);
+
+  Widget card({Key? key, Color? color, Color? shadowColor, Color? surfaceTintColor, double? elevation, ShapeBorder? shape, bool borderOnForeground = true, EdgeInsetsGeometry? margin, Clip? clipBehavior, bool semanticContainer = true,}) =>
+    Card(child: this, key: key, color: color, shadowColor: shadowColor, surfaceTintColor: surfaceTintColor, elevation: elevation, shape: shape, borderOnForeground: borderOnForeground, margin: margin, clipBehavior: clipBehavior, semanticContainer: semanticContainer,);
+
+  Widget cardfilled({Key? key, Color? color, Color? shadowColor, Color? surfaceTintColor, double? elevation, ShapeBorder? shape, bool borderOnForeground = true, EdgeInsetsGeometry? margin, Clip? clipBehavior, bool semanticContainer = true,}) =>
+    Card.filled(child: this, key: key, color: color, shadowColor: shadowColor, surfaceTintColor: surfaceTintColor, elevation: elevation, shape: shape, borderOnForeground: borderOnForeground, margin: margin, clipBehavior: clipBehavior, semanticContainer: semanticContainer,);
+
+  Widget cardoutlined({Key? key, Color? color, Color? shadowColor, Color? surfaceTintColor, double? elevation, ShapeBorder? shape, bool borderOnForeground = true, EdgeInsetsGeometry? margin, Clip? clipBehavior, bool semanticContainer = true,}) =>
+    Card.outlined(child: this, key: key, color: color, shadowColor: shadowColor, surfaceTintColor: surfaceTintColor, elevation: elevation, shape: shape, borderOnForeground: borderOnForeground, margin: margin, clipBehavior: clipBehavior, semanticContainer: semanticContainer,);
+
+  Widget rawMaterialButton({Key? key, required VoidCallback onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHighlightChanged, MouseCursor? mouseCursor, TextStyle? textStyle, Color? fillColor, Color? focusColor, Color? hoverColor, Color? highlightColor, Color? splashColor, double elevation = 2.0, double focusElevation = 4.0, double hoverElevation = 4.0, double highlightElevation = 8.0, double disabledElevation = 0.0, EdgeInsetsGeometry padding = EdgeInsets.zero, VisualDensity visualDensity = VisualDensity.standard, BoxConstraints constraints = const BoxConstraints(minWidth: 88.0, minHeight: 36.0), ShapeBorder shape = const RoundedRectangleBorder(), Duration animationDuration = kThemeChangeDuration, Clip clipBehavior = Clip.none, FocusNode? focusNode, bool autofocus = false, MaterialTapTargetSize? materialTapTargetSize, bool enableFeedback = true,}) =>
+    RawMaterialButton(child: this, key: key, onPressed: onPressed, onLongPress: onLongPress, onHighlightChanged: onHighlightChanged, mouseCursor: mouseCursor, textStyle: textStyle, fillColor: fillColor, focusColor: focusColor, hoverColor: hoverColor, highlightColor: highlightColor, splashColor: splashColor, elevation: elevation, focusElevation: focusElevation, hoverElevation: hoverElevation, highlightElevation: highlightElevation, disabledElevation: disabledElevation, padding: padding, visualDensity: visualDensity, constraints: constraints, shape: shape, animationDuration: animationDuration, clipBehavior: clipBehavior, focusNode: focusNode, autofocus: autofocus, materialTapTargetSize: materialTapTargetSize, enableFeedback: enableFeedback,);
+
+  Widget popupMenuTheme({Key? key, required PopupMenuThemeData data,}) =>
+    PopupMenuTheme(child: this, key: key, data: data,);
 
   Widget tableRowInkWell({GestureTapCallback? onTap, GestureTapCallback? onDoubleTap, GestureLongPressCallback? onLongPress, ValueChanged<bool>? onHighlightChanged, GestureTapCallback? onSecondaryTap, GestureTapDownCallback? onSecondaryTapDown, MaterialStateProperty<Color?>? overlayColor, MouseCursor? mouseCursor,}) =>
     TableRowInkWell(child: this, onTap: onTap, onDoubleTap: onDoubleTap, onLongPress: onLongPress, onHighlightChanged: onHighlightChanged, onSecondaryTap: onSecondaryTap, onSecondaryTapDown: onSecondaryTapDown, overlayColor: overlayColor, mouseCursor: mouseCursor,);
 
-  Widget defaultTabController({required int length, int initialIndex = 0, Duration? animationDuration,}) =>
-    DefaultTabController(child: this, length: length, initialIndex: initialIndex, animationDuration: animationDuration,);
+  Widget defaultTabController({Key? key, required int length, int initialIndex = 0, Duration? animationDuration,}) =>
+    DefaultTabController(child: this, key: key, length: length, initialIndex: initialIndex, animationDuration: animationDuration,);
 
-  Widget textButton({required VoidCallback onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, ButtonStyle? style, FocusNode? focusNode, Clip? clipBehavior, MaterialStatesController? statesController, bool? isSemanticButton = true, IconAlignment iconAlignment = IconAlignment.start,}) =>
-    TextButton(child: this, onPressed: onPressed, onLongPress: onLongPress, onHover: onHover, onFocusChange: onFocusChange, style: style, focusNode: focusNode, clipBehavior: clipBehavior, statesController: statesController, isSemanticButton: isSemanticButton, iconAlignment: iconAlignment,);
+  Widget tooltipTheme({Key? key, required TooltipThemeData data,}) =>
+    TooltipTheme(child: this, key: key, data: data,);
 
-  Widget dialog({Color? backgroundColor, double? elevation, Color? shadowColor, Color? surfaceTintColor, Duration insetAnimationDuration = const Duration(milliseconds: 100), Curve insetAnimationCurve = Curves.decelerate, EdgeInsets? insetPadding, Clip? clipBehavior, ShapeBorder? shape, AlignmentGeometry? alignment,}) =>
-    Dialog(child: this, backgroundColor: backgroundColor, elevation: elevation, shadowColor: shadowColor, surfaceTintColor: surfaceTintColor, insetAnimationDuration: insetAnimationDuration, insetAnimationCurve: insetAnimationCurve, insetPadding: insetPadding, clipBehavior: clipBehavior, shape: shape, alignment: alignment,);
+  Widget menuButtonTheme({Key? key, required MenuButtonThemeData data,}) =>
+    MenuButtonTheme(child: this, key: key, data: data,);
 
-  Widget dialogfullscreen({Color? backgroundColor, Duration insetAnimationDuration = Duration.zero, Curve insetAnimationCurve = Curves.decelerate,}) =>
-    Dialog.fullscreen(child: this, backgroundColor: backgroundColor, insetAnimationDuration: insetAnimationDuration, insetAnimationCurve: insetAnimationCurve,);
+  Widget textButton({required VoidCallback onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, ButtonStyle? style, FocusNode? focusNode, bool autofocus = false, Clip? clipBehavior, MaterialStatesController? statesController, bool? isSemanticButton = true, IconAlignment iconAlignment = IconAlignment.start,}) =>
+    TextButton(child: this, onPressed: onPressed, onLongPress: onLongPress, onHover: onHover, onFocusChange: onFocusChange, style: style, focusNode: focusNode, autofocus: autofocus, clipBehavior: clipBehavior, statesController: statesController, isSemanticButton: isSemanticButton, iconAlignment: iconAlignment,);
 
-  Widget simpleDialogOption({VoidCallback? onPressed, EdgeInsets? padding,}) =>
-    SimpleDialogOption(child: this, onPressed: onPressed, padding: padding,);
+  Widget dialog({Key? key, Color? backgroundColor, double? elevation, Color? shadowColor, Color? surfaceTintColor, Duration insetAnimationDuration = const Duration(milliseconds: 100), Curve insetAnimationCurve = Curves.decelerate, EdgeInsets? insetPadding, Clip? clipBehavior, ShapeBorder? shape, AlignmentGeometry? alignment,}) =>
+    Dialog(child: this, key: key, backgroundColor: backgroundColor, elevation: elevation, shadowColor: shadowColor, surfaceTintColor: surfaceTintColor, insetAnimationDuration: insetAnimationDuration, insetAnimationCurve: insetAnimationCurve, insetPadding: insetPadding, clipBehavior: clipBehavior, shape: shape, alignment: alignment,);
 
-  Widget inkResponse({GestureTapCallback? onTap, GestureTapDownCallback? onTapDown, GestureTapUpCallback? onTapUp, GestureTapCallback? onTapCancel, GestureTapCallback? onDoubleTap, GestureLongPressCallback? onLongPress, GestureTapCallback? onSecondaryTap, GestureTapUpCallback? onSecondaryTapUp, GestureTapDownCallback? onSecondaryTapDown, GestureTapCallback? onSecondaryTapCancel, ValueChanged<bool>? onHighlightChanged, ValueChanged<bool>? onHover, MouseCursor? mouseCursor, bool containedInkWell = false, BoxShape highlightShape = BoxShape.circle, double? radius, BorderRadius? borderRadius, ShapeBorder? customBorder, Color? focusColor, Color? hoverColor, Color? highlightColor, MaterialStateProperty<Color?>? overlayColor, Color? splashColor, InteractiveInkFeatureFactory? splashFactory, bool enableFeedback = true, bool excludeFromSemantics = false, FocusNode? focusNode, bool canRequestFocus = true, ValueChanged<bool>? onFocusChange, bool autofocus = false, MaterialStatesController? statesController, Duration? hoverDuration,}) =>
-    InkResponse(child: this, onTap: onTap, onTapDown: onTapDown, onTapUp: onTapUp, onTapCancel: onTapCancel, onDoubleTap: onDoubleTap, onLongPress: onLongPress, onSecondaryTap: onSecondaryTap, onSecondaryTapUp: onSecondaryTapUp, onSecondaryTapDown: onSecondaryTapDown, onSecondaryTapCancel: onSecondaryTapCancel, onHighlightChanged: onHighlightChanged, onHover: onHover, mouseCursor: mouseCursor, containedInkWell: containedInkWell, highlightShape: highlightShape, radius: radius, borderRadius: borderRadius, customBorder: customBorder, focusColor: focusColor, hoverColor: hoverColor, highlightColor: highlightColor, overlayColor: overlayColor, splashColor: splashColor, splashFactory: splashFactory, enableFeedback: enableFeedback, excludeFromSemantics: excludeFromSemantics, focusNode: focusNode, canRequestFocus: canRequestFocus, onFocusChange: onFocusChange, autofocus: autofocus, statesController: statesController, hoverDuration: hoverDuration,);
+  Widget dialogfullscreen({Key? key, Color? backgroundColor, Duration insetAnimationDuration = Duration.zero, Curve insetAnimationCurve = Curves.decelerate,}) =>
+    Dialog.fullscreen(child: this, key: key, backgroundColor: backgroundColor, insetAnimationDuration: insetAnimationDuration, insetAnimationCurve: insetAnimationCurve,);
+
+  Widget simpleDialogOption({Key? key, VoidCallback? onPressed, EdgeInsets? padding,}) =>
+    SimpleDialogOption(child: this, key: key, onPressed: onPressed, padding: padding,);
+
+  Widget inkResponse({Key? key, GestureTapCallback? onTap, GestureTapDownCallback? onTapDown, GestureTapUpCallback? onTapUp, GestureTapCallback? onTapCancel, GestureTapCallback? onDoubleTap, GestureLongPressCallback? onLongPress, GestureTapCallback? onSecondaryTap, GestureTapUpCallback? onSecondaryTapUp, GestureTapDownCallback? onSecondaryTapDown, GestureTapCallback? onSecondaryTapCancel, ValueChanged<bool>? onHighlightChanged, ValueChanged<bool>? onHover, MouseCursor? mouseCursor, bool containedInkWell = false, BoxShape highlightShape = BoxShape.circle, double? radius, BorderRadius? borderRadius, ShapeBorder? customBorder, Color? focusColor, Color? hoverColor, Color? highlightColor, MaterialStateProperty<Color?>? overlayColor, Color? splashColor, InteractiveInkFeatureFactory? splashFactory, bool enableFeedback = true, bool excludeFromSemantics = false, FocusNode? focusNode, bool canRequestFocus = true, ValueChanged<bool>? onFocusChange, bool autofocus = false, MaterialStatesController? statesController, Duration? hoverDuration,}) =>
+    InkResponse(child: this, key: key, onTap: onTap, onTapDown: onTapDown, onTapUp: onTapUp, onTapCancel: onTapCancel, onDoubleTap: onDoubleTap, onLongPress: onLongPress, onSecondaryTap: onSecondaryTap, onSecondaryTapUp: onSecondaryTapUp, onSecondaryTapDown: onSecondaryTapDown, onSecondaryTapCancel: onSecondaryTapCancel, onHighlightChanged: onHighlightChanged, onHover: onHover, mouseCursor: mouseCursor, containedInkWell: containedInkWell, highlightShape: highlightShape, radius: radius, borderRadius: borderRadius, customBorder: customBorder, focusColor: focusColor, hoverColor: hoverColor, highlightColor: highlightColor, overlayColor: overlayColor, splashColor: splashColor, splashFactory: splashFactory, enableFeedback: enableFeedback, excludeFromSemantics: excludeFromSemantics, focusNode: focusNode, canRequestFocus: canRequestFocus, onFocusChange: onFocusChange, autofocus: autofocus, statesController: statesController, hoverDuration: hoverDuration,);
 
   Widget inkWell({GestureTapCallback? onTap, GestureTapCallback? onDoubleTap, GestureLongPressCallback? onLongPress, GestureTapDownCallback? onTapDown, GestureTapUpCallback? onTapUp, GestureTapCallback? onTapCancel, GestureTapCallback? onSecondaryTap, GestureTapUpCallback? onSecondaryTapUp, GestureTapDownCallback? onSecondaryTapDown, GestureTapCallback? onSecondaryTapCancel, ValueChanged<bool>? onHighlightChanged, ValueChanged<bool>? onHover, MouseCursor? mouseCursor, Color? focusColor, Color? hoverColor, Color? highlightColor, MaterialStateProperty<Color?>? overlayColor, Color? splashColor, InteractiveInkFeatureFactory? splashFactory, double? radius, BorderRadius? borderRadius, ShapeBorder? customBorder, bool? enableFeedback = true, bool excludeFromSemantics = false, FocusNode? focusNode, bool canRequestFocus = true, ValueChanged<bool>? onFocusChange, bool autofocus = false, MaterialStatesController? statesController, Duration? hoverDuration,}) =>
     InkWell(child: this, onTap: onTap, onDoubleTap: onDoubleTap, onLongPress: onLongPress, onTapDown: onTapDown, onTapUp: onTapUp, onTapCancel: onTapCancel, onSecondaryTap: onSecondaryTap, onSecondaryTapUp: onSecondaryTapUp, onSecondaryTapDown: onSecondaryTapDown, onSecondaryTapCancel: onSecondaryTapCancel, onHighlightChanged: onHighlightChanged, onHover: onHover, mouseCursor: mouseCursor, focusColor: focusColor, hoverColor: hoverColor, highlightColor: highlightColor, overlayColor: overlayColor, splashColor: splashColor, splashFactory: splashFactory, radius: radius, borderRadius: borderRadius, customBorder: customBorder, enableFeedback: enableFeedback, excludeFromSemantics: excludeFromSemantics, focusNode: focusNode, canRequestFocus: canRequestFocus, onFocusChange: onFocusChange, autofocus: autofocus, statesController: statesController, hoverDuration: hoverDuration,);
 
-  Widget tab({String? text, Widget? icon, EdgeInsetsGeometry? iconMargin, double? height,}) =>
-    Tab(child: this, text: text, icon: icon, iconMargin: iconMargin, height: height,);
+  Widget radioTheme({Key? key, required RadioThemeData data,}) =>
+    RadioTheme(child: this, key: key, data: data,);
 
-  Widget floatingActionButton({String? tooltip, Color? foregroundColor, Color? backgroundColor, Color? focusColor, Color? hoverColor, Color? splashColor, Object? heroTag = const _DefaultHeroTag(), double? elevation, double? focusElevation, double? hoverElevation, double? highlightElevation, double? disabledElevation, required VoidCallback onPressed, MouseCursor? mouseCursor, bool mini = false, ShapeBorder? shape, Clip clipBehavior = Clip.none, FocusNode? focusNode, bool autofocus = false, MaterialTapTargetSize? materialTapTargetSize, bool isExtended = false, bool? enableFeedback,}) =>
-    FloatingActionButton(child: this, tooltip: tooltip, foregroundColor: foregroundColor, backgroundColor: backgroundColor, focusColor: focusColor, hoverColor: hoverColor, splashColor: splashColor, heroTag: heroTag, elevation: elevation, focusElevation: focusElevation, hoverElevation: hoverElevation, highlightElevation: highlightElevation, disabledElevation: disabledElevation, onPressed: onPressed, mouseCursor: mouseCursor, mini: mini, shape: shape, clipBehavior: clipBehavior, focusNode: focusNode, autofocus: autofocus, materialTapTargetSize: materialTapTargetSize, isExtended: isExtended, enableFeedback: enableFeedback,);
+  Widget tab({Key? key, String? text, Widget? icon, EdgeInsetsGeometry? iconMargin, double? height,}) =>
+    Tab(child: this, key: key, text: text, icon: icon, iconMargin: iconMargin, height: height,);
 
-  Widget floatingActionButtonsmall({String? tooltip, Color? foregroundColor, Color? backgroundColor, Color? focusColor, Color? hoverColor, Color? splashColor, Object? heroTag = const _DefaultHeroTag(), double? elevation, double? focusElevation, double? hoverElevation, double? highlightElevation, double? disabledElevation, required VoidCallback onPressed, MouseCursor? mouseCursor, ShapeBorder? shape, Clip clipBehavior = Clip.none, FocusNode? focusNode, bool autofocus = false, MaterialTapTargetSize? materialTapTargetSize, bool? enableFeedback,}) =>
-    FloatingActionButton.small(child: this, tooltip: tooltip, foregroundColor: foregroundColor, backgroundColor: backgroundColor, focusColor: focusColor, hoverColor: hoverColor, splashColor: splashColor, heroTag: heroTag, elevation: elevation, focusElevation: focusElevation, hoverElevation: hoverElevation, highlightElevation: highlightElevation, disabledElevation: disabledElevation, onPressed: onPressed, mouseCursor: mouseCursor, shape: shape, clipBehavior: clipBehavior, focusNode: focusNode, autofocus: autofocus, materialTapTargetSize: materialTapTargetSize, enableFeedback: enableFeedback,);
+  Widget bottomNavigationBarTheme({Key? key, required BottomNavigationBarThemeData data,}) =>
+    BottomNavigationBarTheme(child: this, key: key, data: data,);
 
-  Widget floatingActionButtonlarge({String? tooltip, Color? foregroundColor, Color? backgroundColor, Color? focusColor, Color? hoverColor, Color? splashColor, Object? heroTag = const _DefaultHeroTag(), double? elevation, double? focusElevation, double? hoverElevation, double? highlightElevation, double? disabledElevation, required VoidCallback onPressed, MouseCursor? mouseCursor, ShapeBorder? shape, Clip clipBehavior = Clip.none, FocusNode? focusNode, bool autofocus = false, MaterialTapTargetSize? materialTapTargetSize, bool? enableFeedback,}) =>
-    FloatingActionButton.large(child: this, tooltip: tooltip, foregroundColor: foregroundColor, backgroundColor: backgroundColor, focusColor: focusColor, hoverColor: hoverColor, splashColor: splashColor, heroTag: heroTag, elevation: elevation, focusElevation: focusElevation, hoverElevation: hoverElevation, highlightElevation: highlightElevation, disabledElevation: disabledElevation, onPressed: onPressed, mouseCursor: mouseCursor, shape: shape, clipBehavior: clipBehavior, focusNode: focusNode, autofocus: autofocus, materialTapTargetSize: materialTapTargetSize, enableFeedback: enableFeedback,);
+  Widget floatingActionButton({Key? key, String? tooltip, Color? foregroundColor, Color? backgroundColor, Color? focusColor, Color? hoverColor, Color? splashColor, Object? heroTag = const _DefaultHeroTag(), double? elevation, double? focusElevation, double? hoverElevation, double? highlightElevation, double? disabledElevation, required VoidCallback onPressed, MouseCursor? mouseCursor, bool mini = false, ShapeBorder? shape, Clip clipBehavior = Clip.none, FocusNode? focusNode, bool autofocus = false, MaterialTapTargetSize? materialTapTargetSize, bool isExtended = false, bool? enableFeedback,}) =>
+    FloatingActionButton(child: this, key: key, tooltip: tooltip, foregroundColor: foregroundColor, backgroundColor: backgroundColor, focusColor: focusColor, hoverColor: hoverColor, splashColor: splashColor, heroTag: heroTag, elevation: elevation, focusElevation: focusElevation, hoverElevation: hoverElevation, highlightElevation: highlightElevation, disabledElevation: disabledElevation, onPressed: onPressed, mouseCursor: mouseCursor, mini: mini, shape: shape, clipBehavior: clipBehavior, focusNode: focusNode, autofocus: autofocus, materialTapTargetSize: materialTapTargetSize, isExtended: isExtended, enableFeedback: enableFeedback,);
 
-  Widget filledButton({required VoidCallback onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, ButtonStyle? style, FocusNode? focusNode, Clip? clipBehavior, MaterialStatesController? statesController, IconAlignment iconAlignment = IconAlignment.start,}) =>
-    FilledButton(child: this, onPressed: onPressed, onLongPress: onLongPress, onHover: onHover, onFocusChange: onFocusChange, style: style, focusNode: focusNode, clipBehavior: clipBehavior, statesController: statesController, iconAlignment: iconAlignment,);
+  Widget floatingActionButtonsmall({Key? key, String? tooltip, Color? foregroundColor, Color? backgroundColor, Color? focusColor, Color? hoverColor, Color? splashColor, Object? heroTag = const _DefaultHeroTag(), double? elevation, double? focusElevation, double? hoverElevation, double? highlightElevation, double? disabledElevation, required VoidCallback onPressed, MouseCursor? mouseCursor, ShapeBorder? shape, Clip clipBehavior = Clip.none, FocusNode? focusNode, bool autofocus = false, MaterialTapTargetSize? materialTapTargetSize, bool? enableFeedback,}) =>
+    FloatingActionButton.small(child: this, key: key, tooltip: tooltip, foregroundColor: foregroundColor, backgroundColor: backgroundColor, focusColor: focusColor, hoverColor: hoverColor, splashColor: splashColor, heroTag: heroTag, elevation: elevation, focusElevation: focusElevation, hoverElevation: hoverElevation, highlightElevation: highlightElevation, disabledElevation: disabledElevation, onPressed: onPressed, mouseCursor: mouseCursor, shape: shape, clipBehavior: clipBehavior, focusNode: focusNode, autofocus: autofocus, materialTapTargetSize: materialTapTargetSize, enableFeedback: enableFeedback,);
 
-  Widget filledButtontonal({required VoidCallback onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, ButtonStyle? style, FocusNode? focusNode, Clip? clipBehavior, MaterialStatesController? statesController,}) =>
-    FilledButton.tonal(child: this, onPressed: onPressed, onLongPress: onLongPress, onHover: onHover, onFocusChange: onFocusChange, style: style, focusNode: focusNode, clipBehavior: clipBehavior, statesController: statesController,);
+  Widget floatingActionButtonlarge({Key? key, String? tooltip, Color? foregroundColor, Color? backgroundColor, Color? focusColor, Color? hoverColor, Color? splashColor, Object? heroTag = const _DefaultHeroTag(), double? elevation, double? focusElevation, double? hoverElevation, double? highlightElevation, double? disabledElevation, required VoidCallback onPressed, MouseCursor? mouseCursor, ShapeBorder? shape, Clip clipBehavior = Clip.none, FocusNode? focusNode, bool autofocus = false, MaterialTapTargetSize? materialTapTargetSize, bool? enableFeedback,}) =>
+    FloatingActionButton.large(child: this, key: key, tooltip: tooltip, foregroundColor: foregroundColor, backgroundColor: backgroundColor, focusColor: focusColor, hoverColor: hoverColor, splashColor: splashColor, heroTag: heroTag, elevation: elevation, focusElevation: focusElevation, hoverElevation: hoverElevation, highlightElevation: highlightElevation, disabledElevation: disabledElevation, onPressed: onPressed, mouseCursor: mouseCursor, shape: shape, clipBehavior: clipBehavior, focusNode: focusNode, autofocus: autofocus, materialTapTargetSize: materialTapTargetSize, enableFeedback: enableFeedback,);
 
-  Widget tooltipVisibility({required bool visible,}) =>
-    TooltipVisibility(child: this, visible: visible,);
+  Widget filledButton({required VoidCallback onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, ButtonStyle? style, FocusNode? focusNode, bool autofocus = false, Clip? clipBehavior = Clip.none, MaterialStatesController? statesController, IconAlignment iconAlignment = IconAlignment.start,}) =>
+    FilledButton(child: this, onPressed: onPressed, onLongPress: onLongPress, onHover: onHover, onFocusChange: onFocusChange, style: style, focusNode: focusNode, autofocus: autofocus, clipBehavior: clipBehavior, statesController: statesController, iconAlignment: iconAlignment,);
+
+  Widget filledButtontonal({required VoidCallback onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, ButtonStyle? style, FocusNode? focusNode, bool autofocus = false, Clip? clipBehavior = Clip.none, MaterialStatesController? statesController,}) =>
+    FilledButton.tonal(child: this, onPressed: onPressed, onLongPress: onLongPress, onHover: onHover, onFocusChange: onFocusChange, style: style, focusNode: focusNode, autofocus: autofocus, clipBehavior: clipBehavior, statesController: statesController,);
+
+  Widget tooltipVisibility({Key? key, required bool visible,}) =>
+    TooltipVisibility(child: this, key: key, visible: visible,);
+
+  Widget checkboxTheme({Key? key, required CheckboxThemeData data,}) =>
+    CheckboxTheme(child: this, key: key, data: data,);
+
+  Widget scrollbarTheme({Key? key, required ScrollbarThemeData data,}) =>
+    ScrollbarTheme(child: this, key: key, data: data,);
 
   Widget popupMenuItem<T>({T? value, VoidCallback? onTap, bool enabled = true, double height = kMinInteractiveDimension, EdgeInsets? padding, TextStyle? textStyle, MaterialStateProperty<TextStyle?>? labelTextStyle, MouseCursor? mouseCursor,}) =>
     PopupMenuItem(child: this, value: value, onTap: onTap, enabled: enabled, height: height, padding: padding, textStyle: textStyle, labelTextStyle: labelTextStyle, mouseCursor: mouseCursor,);
@@ -196,47 +277,98 @@ extension FlutterWidgetSkewer on Widget {
   Widget checkedPopupMenuItem<T>({T? value, bool checked = false, bool enabled = true, EdgeInsets? padding, double height = kMinInteractiveDimension, MaterialStateProperty<TextStyle?>? labelTextStyle, MouseCursor? mouseCursor, VoidCallback? onTap,}) =>
     CheckedPopupMenuItem(child: this, value: value, checked: checked, enabled: enabled, padding: padding, height: height, labelTextStyle: labelTextStyle, mouseCursor: mouseCursor, onTap: onTap,);
 
-  Widget popupMenuButton<T>({required PopupMenuItemBuilder<T> itemBuilder, T? initialValue, VoidCallback? onOpened, PopupMenuItemSelected<T>? onSelected, PopupMenuCanceled? onCanceled, String? tooltip, double? elevation, Color? shadowColor, Color? surfaceTintColor, EdgeInsetsGeometry padding = const EdgeInsets.all(8.0), EdgeInsetsGeometry? menuPadding, BorderRadius? borderRadius, double? splashRadius, Widget? icon, double? iconSize, Offset offset = Offset.zero, bool enabled = true, ShapeBorder? shape, Color? color, Color? iconColor, bool? enableFeedback, BoxConstraints? constraints, PopupMenuPosition? position, Clip clipBehavior = Clip.none, bool useRootNavigator = false, AnimationStyle? popUpAnimationStyle, RouteSettings? routeSettings, ButtonStyle? style, bool? requestFocus,}) =>
-    PopupMenuButton(child: this, itemBuilder: itemBuilder, initialValue: initialValue, onOpened: onOpened, onSelected: onSelected, onCanceled: onCanceled, tooltip: tooltip, elevation: elevation, shadowColor: shadowColor, surfaceTintColor: surfaceTintColor, padding: padding, menuPadding: menuPadding, borderRadius: borderRadius, splashRadius: splashRadius, icon: icon, iconSize: iconSize, offset: offset, enabled: enabled, shape: shape, color: color, iconColor: iconColor, enableFeedback: enableFeedback, constraints: constraints, position: position, clipBehavior: clipBehavior, useRootNavigator: useRootNavigator, popUpAnimationStyle: popUpAnimationStyle, routeSettings: routeSettings, style: style, requestFocus: requestFocus,);
+  Widget popupMenuButton<T>({Key? key, required PopupMenuItemBuilder<T> itemBuilder, T? initialValue, VoidCallback? onOpened, PopupMenuItemSelected<T>? onSelected, PopupMenuCanceled? onCanceled, String? tooltip, double? elevation, Color? shadowColor, Color? surfaceTintColor, EdgeInsetsGeometry padding = const EdgeInsets.all(8.0), EdgeInsetsGeometry? menuPadding, BorderRadius? borderRadius, double? splashRadius, Widget? icon, double? iconSize, Offset offset = Offset.zero, bool enabled = true, ShapeBorder? shape, Color? color, Color? iconColor, bool? enableFeedback, BoxConstraints? constraints, PopupMenuPosition? position, Clip clipBehavior = Clip.none, bool useRootNavigator = false, AnimationStyle? popUpAnimationStyle, RouteSettings? routeSettings, ButtonStyle? style, bool? requestFocus,}) =>
+    PopupMenuButton(child: this, key: key, itemBuilder: itemBuilder, initialValue: initialValue, onOpened: onOpened, onSelected: onSelected, onCanceled: onCanceled, tooltip: tooltip, elevation: elevation, shadowColor: shadowColor, surfaceTintColor: surfaceTintColor, padding: padding, menuPadding: menuPadding, borderRadius: borderRadius, splashRadius: splashRadius, icon: icon, iconSize: iconSize, offset: offset, enabled: enabled, shape: shape, color: color, iconColor: iconColor, enableFeedback: enableFeedback, constraints: constraints, position: position, clipBehavior: clipBehavior, useRootNavigator: useRootNavigator, popUpAnimationStyle: popUpAnimationStyle, routeSettings: routeSettings, style: style, requestFocus: requestFocus,);
 
-  Widget bottomAppBar({Color? color, double? elevation, NotchedShape? shape, Clip clipBehavior = Clip.none, double notchMargin = 4.0, EdgeInsetsGeometry? padding, Color? surfaceTintColor, Color? shadowColor, double? height,}) =>
-    BottomAppBar(child: this, color: color, elevation: elevation, shape: shape, clipBehavior: clipBehavior, notchMargin: notchMargin, padding: padding, surfaceTintColor: surfaceTintColor, shadowColor: shadowColor, height: height,);
+  Widget bottomAppBar({Key? key, Color? color, double? elevation, NotchedShape? shape, Clip clipBehavior = Clip.none, double notchMargin = 4.0, EdgeInsetsGeometry? padding, Color? surfaceTintColor, Color? shadowColor, double? height,}) =>
+    BottomAppBar(child: this, key: key, color: color, elevation: elevation, shape: shape, clipBehavior: clipBehavior, notchMargin: notchMargin, padding: padding, surfaceTintColor: surfaceTintColor, shadowColor: shadowColor, height: height,);
 
-  Widget dialogTheme({Color? backgroundColor, double? elevation, Color? shadowColor, Color? surfaceTintColor, ShapeBorder? shape, AlignmentGeometry? alignment, Color? iconColor, TextStyle? titleTextStyle, TextStyle? contentTextStyle, EdgeInsetsGeometry? actionsPadding, Color? barrierColor, EdgeInsets? insetPadding, Clip? clipBehavior, DialogThemeData? data,}) =>
-    DialogTheme(child: this, backgroundColor: backgroundColor, elevation: elevation, shadowColor: shadowColor, surfaceTintColor: surfaceTintColor, shape: shape, alignment: alignment, iconColor: iconColor, titleTextStyle: titleTextStyle, contentTextStyle: contentTextStyle, actionsPadding: actionsPadding, barrierColor: barrierColor, insetPadding: insetPadding, clipBehavior: clipBehavior, data: data,);
+  Widget navigationDrawerTheme({Key? key, required NavigationDrawerThemeData data,}) =>
+    NavigationDrawerTheme(child: this, key: key, data: data,);
 
-  Widget cardTheme({Clip? clipBehavior, Color? color, Color? surfaceTintColor, Color? shadowColor, double? elevation, EdgeInsetsGeometry? margin, ShapeBorder? shape, CardThemeData? data,}) =>
-    CardTheme(child: this, clipBehavior: clipBehavior, color: color, surfaceTintColor: surfaceTintColor, shadowColor: shadowColor, elevation: elevation, margin: margin, shape: shape, data: data,);
+  Widget filledButtonTheme({Key? key, required FilledButtonThemeData data,}) =>
+    FilledButtonTheme(child: this, key: key, data: data,);
 
-  Widget tooltip({String? message, InlineSpan? richMessage, double? height, EdgeInsetsGeometry? padding, EdgeInsetsGeometry? margin, double? verticalOffset, bool? preferBelow, bool? excludeFromSemantics, Decoration? decoration, TextStyle? textStyle, TextAlign? textAlign, Duration? waitDuration, Duration? showDuration, Duration? exitDuration, bool enableTapToDismiss = true, TooltipTriggerMode? triggerMode, bool? enableFeedback, TooltipTriggeredCallback? onTriggered,}) =>
-    Tooltip(child: this, message: message, richMessage: richMessage, height: height, padding: padding, margin: margin, verticalOffset: verticalOffset, preferBelow: preferBelow, excludeFromSemantics: excludeFromSemantics, decoration: decoration, textStyle: textStyle, textAlign: textAlign, waitDuration: waitDuration, showDuration: showDuration, exitDuration: exitDuration, enableTapToDismiss: enableTapToDismiss, triggerMode: triggerMode, enableFeedback: enableFeedback, onTriggered: onTriggered,);
+  Widget dialogTheme({Key? key, Color? backgroundColor, double? elevation, Color? shadowColor, Color? surfaceTintColor, ShapeBorder? shape, AlignmentGeometry? alignment, Color? iconColor, TextStyle? titleTextStyle, TextStyle? contentTextStyle, EdgeInsetsGeometry? actionsPadding, Color? barrierColor, EdgeInsets? insetPadding, Clip? clipBehavior, DialogThemeData? data,}) =>
+    DialogTheme(child: this, key: key, backgroundColor: backgroundColor, elevation: elevation, shadowColor: shadowColor, surfaceTintColor: surfaceTintColor, shape: shape, alignment: alignment, iconColor: iconColor, titleTextStyle: titleTextStyle, contentTextStyle: contentTextStyle, actionsPadding: actionsPadding, barrierColor: barrierColor, insetPadding: insetPadding, clipBehavior: clipBehavior, data: data,);
 
-  Widget elevatedButton({required VoidCallback onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, ButtonStyle? style, FocusNode? focusNode, Clip? clipBehavior, MaterialStatesController? statesController, IconAlignment iconAlignment = IconAlignment.start,}) =>
-    ElevatedButton(child: this, onPressed: onPressed, onLongPress: onLongPress, onHover: onHover, onFocusChange: onFocusChange, style: style, focusNode: focusNode, clipBehavior: clipBehavior, statesController: statesController, iconAlignment: iconAlignment,);
+  Widget segmentedButtonTheme({Key? key, required SegmentedButtonThemeData data,}) =>
+    SegmentedButtonTheme(child: this, key: key, data: data,);
+
+  Widget cardTheme({Key? key, Clip? clipBehavior, Color? color, Color? surfaceTintColor, Color? shadowColor, double? elevation, EdgeInsetsGeometry? margin, ShapeBorder? shape, CardThemeData? data,}) =>
+    CardTheme(child: this, key: key, clipBehavior: clipBehavior, color: color, surfaceTintColor: surfaceTintColor, shadowColor: shadowColor, elevation: elevation, margin: margin, shape: shape, data: data,);
+
+  Widget tooltip({Key? key, String? message, InlineSpan? richMessage, double? height, EdgeInsetsGeometry? padding, EdgeInsetsGeometry? margin, double? verticalOffset, bool? preferBelow, bool? excludeFromSemantics, Decoration? decoration, TextStyle? textStyle, TextAlign? textAlign, Duration? waitDuration, Duration? showDuration, Duration? exitDuration, bool enableTapToDismiss = true, TooltipTriggerMode? triggerMode, bool? enableFeedback, TooltipTriggeredCallback? onTriggered,}) =>
+    Tooltip(child: this, key: key, message: message, richMessage: richMessage, height: height, padding: padding, margin: margin, verticalOffset: verticalOffset, preferBelow: preferBelow, excludeFromSemantics: excludeFromSemantics, decoration: decoration, textStyle: textStyle, textAlign: textAlign, waitDuration: waitDuration, showDuration: showDuration, exitDuration: exitDuration, enableTapToDismiss: enableTapToDismiss, triggerMode: triggerMode, enableFeedback: enableFeedback, onTriggered: onTriggered,);
+
+  Widget elevatedButton({required VoidCallback onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, ButtonStyle? style, FocusNode? focusNode, bool autofocus = false, Clip? clipBehavior, MaterialStatesController? statesController, IconAlignment iconAlignment = IconAlignment.start,}) =>
+    ElevatedButton(child: this, onPressed: onPressed, onLongPress: onLongPress, onHover: onHover, onFocusChange: onFocusChange, style: style, focusNode: focusNode, autofocus: autofocus, clipBehavior: clipBehavior, statesController: statesController, iconAlignment: iconAlignment,);
 
   Widget dropdownMenuItem<T>({VoidCallback? onTap, T? value, bool enabled = true, AlignmentGeometry alignment = AlignmentDirectional.centerStart,}) =>
     DropdownMenuItem(child: this, onTap: onTap, value: value, enabled: enabled, alignment: alignment,);
 
-  Widget outlinedButton({required VoidCallback onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, ButtonStyle? style, FocusNode? focusNode, Clip? clipBehavior, MaterialStatesController? statesController, IconAlignment iconAlignment = IconAlignment.start,}) =>
-    OutlinedButton(child: this, onPressed: onPressed, onLongPress: onLongPress, onHover: onHover, onFocusChange: onFocusChange, style: style, focusNode: focusNode, clipBehavior: clipBehavior, statesController: statesController, iconAlignment: iconAlignment,);
+  Widget dropdownButtonHideUnderline({Key? key,}) =>
+    DropdownButtonHideUnderline(child: this, key: key,);
 
-  Widget drawer({Color? backgroundColor, double? elevation, Color? shadowColor, Color? surfaceTintColor, ShapeBorder? shape, double? width, String? semanticLabel, Clip? clipBehavior,}) =>
-    Drawer(child: this, backgroundColor: backgroundColor, elevation: elevation, shadowColor: shadowColor, surfaceTintColor: surfaceTintColor, shape: shape, width: width, semanticLabel: semanticLabel, clipBehavior: clipBehavior,);
+  Widget buttonTheme({Key? key, ButtonTextTheme textTheme = ButtonTextTheme.normal, ButtonBarLayoutBehavior layoutBehavior = ButtonBarLayoutBehavior.padded, double minWidth = 88.0, double height = 36.0, EdgeInsetsGeometry? padding, ShapeBorder? shape, bool alignedDropdown = false, Color? buttonColor, Color? disabledColor, Color? focusColor, Color? hoverColor, Color? highlightColor, Color? splashColor, ColorScheme? colorScheme, MaterialTapTargetSize? materialTapTargetSize,}) =>
+    ButtonTheme(child: this, key: key, textTheme: textTheme, layoutBehavior: layoutBehavior, minWidth: minWidth, height: height, padding: padding, shape: shape, alignedDropdown: alignedDropdown, buttonColor: buttonColor, disabledColor: disabledColor, focusColor: focusColor, hoverColor: hoverColor, highlightColor: highlightColor, splashColor: splashColor, colorScheme: colorScheme, materialTapTargetSize: materialTapTargetSize,);
+
+  Widget buttonThemefromButtonThemeData({Key? key, required ButtonThemeData data,}) =>
+    ButtonTheme.fromButtonThemeData(child: this, key: key, data: data,);
+
+  Widget dividerTheme({Key? key, required DividerThemeData data,}) =>
+    DividerTheme(child: this, key: key, data: data,);
+
+  Widget dataTableTheme({Key? key, required DataTableThemeData data,}) =>
+    DataTableTheme(child: this, key: key, data: data,);
+
+  Widget outlinedButton({required VoidCallback onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, ButtonStyle? style, FocusNode? focusNode, bool autofocus = false, Clip? clipBehavior, MaterialStatesController? statesController, IconAlignment iconAlignment = IconAlignment.start,}) =>
+    OutlinedButton(child: this, onPressed: onPressed, onLongPress: onLongPress, onHover: onHover, onFocusChange: onFocusChange, style: style, focusNode: focusNode, autofocus: autofocus, clipBehavior: clipBehavior, statesController: statesController, iconAlignment: iconAlignment,);
+
+  Widget sliderTheme({Key? key, required SliderThemeData data,}) =>
+    SliderTheme(child: this, key: key, data: data,);
+
+  Widget chipTheme({Key? key, required ChipThemeData data,}) =>
+    ChipTheme(child: this, key: key, data: data,);
+
+  Widget iconButtonTheme({Key? key, required IconButtonThemeData data,}) =>
+    IconButtonTheme(child: this, key: key, data: data,);
+
+  Widget drawer({Key? key, Color? backgroundColor, double? elevation, Color? shadowColor, Color? surfaceTintColor, ShapeBorder? shape, double? width, String? semanticLabel, Clip? clipBehavior,}) =>
+    Drawer(child: this, key: key, backgroundColor: backgroundColor, elevation: elevation, shadowColor: shadowColor, surfaceTintColor: surfaceTintColor, shape: shape, width: width, semanticLabel: semanticLabel, clipBehavior: clipBehavior,);
 
   Widget drawerController({GlobalKey? key, required DrawerAlignment alignment, bool isDrawerOpen = false, DrawerCallback? drawerCallback, DragStartBehavior dragStartBehavior = DragStartBehavior.start, Color? scrimColor, double? edgeDragWidth, bool enableOpenDragGesture = true,}) =>
     DrawerController(child: this, key: key, alignment: alignment, isDrawerOpen: isDrawerOpen, drawerCallback: drawerCallback, dragStartBehavior: dragStartBehavior, scrimColor: scrimColor, edgeDragWidth: edgeDragWidth, enableOpenDragGesture: enableOpenDragGesture,);
 
-  Widget scrollbar({ScrollController? controller, bool? thumbVisibility, bool? trackVisibility, double? thickness, Radius? radius, ScrollNotificationPredicate? notificationPredicate, bool? interactive, ScrollbarOrientation? scrollbarOrientation,}) =>
-    Scrollbar(child: this, controller: controller, thumbVisibility: thumbVisibility, trackVisibility: trackVisibility, thickness: thickness, radius: radius, notificationPredicate: notificationPredicate, interactive: interactive, scrollbarOrientation: scrollbarOrientation,);
+  Widget expansionTileTheme({Key? key, required ExpansionTileThemeData data,}) =>
+    ExpansionTileTheme(child: this, key: key, data: data,);
 
-  Widget theme({required ThemeData data,}) =>
-    Theme(child: this, data: data,);
+  Widget flexibleSpaceBarSettings({Key? key, required double toolbarOpacity, required double minExtent, required double maxExtent, required double currentExtent, bool? isScrolledUnder, bool? hasLeading,}) =>
+    FlexibleSpaceBarSettings(child: this, key: key, toolbarOpacity: toolbarOpacity, minExtent: minExtent, maxExtent: maxExtent, currentExtent: currentExtent, isScrolledUnder: isScrolledUnder, hasLeading: hasLeading,);
 
-  Widget animatedTheme({required ThemeData data, dynamic curve = Curves.linear,}) =>
-    AnimatedTheme(child: this, data: data, curve: curve,);
+  Widget navigationBarTheme({Key? key, required NavigationBarThemeData data,}) =>
+    NavigationBarTheme(child: this, key: key, data: data,);
 
-  Widget desktopTextSelectionToolbarButton({required VoidCallback onPressed,}) =>
-    DesktopTextSelectionToolbarButton(child: this, onPressed: onPressed,);
+  Widget scrollbar({Key? key, ScrollController? controller, bool? thumbVisibility, bool? trackVisibility, double? thickness, Radius? radius, ScrollNotificationPredicate? notificationPredicate, bool? interactive, ScrollbarOrientation? scrollbarOrientation,}) =>
+    Scrollbar(child: this, key: key, controller: controller, thumbVisibility: thumbVisibility, trackVisibility: trackVisibility, thickness: thickness, radius: radius, notificationPredicate: notificationPredicate, interactive: interactive, scrollbarOrientation: scrollbarOrientation,);
+
+  Widget searchBarTheme({Key? key, required SearchBarThemeData data,}) =>
+    SearchBarTheme(child: this, key: key, data: data,);
+
+  Widget menuBarTheme({Key? key, required MenuBarThemeData data,}) =>
+    MenuBarTheme(child: this, key: key, data: data,);
+
+  Widget buttonBarTheme({Key? key, required ButtonBarThemeData data,}) =>
+    ButtonBarTheme(child: this, key: key, data: data,);
+
+  Widget theme({Key? key, required ThemeData data,}) =>
+    Theme(child: this, key: key, data: data,);
+
+  Widget animatedTheme({Key? key, required ThemeData data, Curve curve = Curves.linear, Duration duration = kThemeAnimationDuration, VoidCallback? onEnd,}) =>
+    AnimatedTheme(child: this, key: key, data: data, curve: curve, duration: duration, onEnd: onEnd,);
+
+  Widget desktopTextSelectionToolbarButton({Key? key, required VoidCallback onPressed,}) =>
+    DesktopTextSelectionToolbarButton(child: this, key: key, onPressed: onPressed,);
 
   Widget singleChildScrollView({Key? key, Axis scrollDirection = Axis.vertical, bool reverse = false, EdgeInsetsGeometry? padding, bool? primary, ScrollPhysics? physics, ScrollController? controller, DragStartBehavior dragStartBehavior = DragStartBehavior.start, Clip clipBehavior = Clip.hardEdge, HitTestBehavior hitTestBehavior = HitTestBehavior.opaque, String? restorationId, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual,}) =>
     SingleChildScrollView(child: this, key: key, scrollDirection: scrollDirection, reverse: reverse, padding: padding, primary: primary, physics: physics, controller: controller, dragStartBehavior: dragStartBehavior, clipBehavior: clipBehavior, hitTestBehavior: hitTestBehavior, restorationId: restorationId, keyboardDismissBehavior: keyboardDismissBehavior,);
@@ -337,7 +469,7 @@ extension FlutterWidgetSkewer on Widget {
   Widget tapRegion({Key? key, bool enabled = true, HitTestBehavior behavior = HitTestBehavior.deferToChild, TapRegionCallback? onTapOutside, TapRegionCallback? onTapInside, Object? groupId, bool consumeOutsideTaps = false, String? debugLabel,}) =>
     TapRegion(child: this, key: key, enabled: enabled, behavior: behavior, onTapOutside: onTapOutside, onTapInside: onTapInside, groupId: groupId, consumeOutsideTaps: consumeOutsideTaps, debugLabel: debugLabel,);
 
-  Widget textFieldTapRegion({Key? key, bool enabled = true, TapRegionCallback? onTapOutside, TapRegionCallback? onTapInside, bool consumeOutsideTaps = false, String? debugLabel, Object? groupId,}) =>
+  Widget textFieldTapRegion({Key? key, bool enabled = true, TapRegionCallback? onTapOutside, TapRegionCallback? onTapInside, bool consumeOutsideTaps = false, String? debugLabel, Object? groupId = EditableText,}) =>
     TextFieldTapRegion(child: this, key: key, enabled: enabled, onTapOutside: onTapOutside, onTapInside: onTapInside, consumeOutsideTaps: consumeOutsideTaps, debugLabel: debugLabel, groupId: groupId,);
 
   Widget backButtonListener({Key? key, required ValueGetter<Future<bool>> onBackButtonPressed,}) =>
@@ -869,65 +1001,65 @@ extension FlutterWidgetSkewer on Widget {
 
 /// Converting a List<Widget> into a multi-child widget that takes a children or slivers parameter.
 extension MultiChildFlutterWidgetSkewer on List<Widget> {
-  Widget cupertinoDesktopTextSelectionToolbar({required Offset anchor,}) =>
-    CupertinoDesktopTextSelectionToolbar(children: this, anchor: anchor,);
+  Widget cupertinoDesktopTextSelectionToolbar({Key? key, required Offset anchor,}) =>
+    CupertinoDesktopTextSelectionToolbar(children: this, key: key, anchor: anchor,);
 
-  Widget cupertinoPicker({double diameterRatio = _kDefaultDiameterRatio, Color? backgroundColor, double offAxisFraction = 0.0, bool useMagnifier = false, double magnification = 1.0, FixedExtentScrollController? scrollController, double squeeze = _kSqueeze, required double itemExtent, required ValueChanged<int> onSelectedItemChanged, Widget? selectionOverlay = const CupertinoPickerDefaultSelectionOverlay(), bool looping = false,}) =>
-    CupertinoPicker(children: this, diameterRatio: diameterRatio, backgroundColor: backgroundColor, offAxisFraction: offAxisFraction, useMagnifier: useMagnifier, magnification: magnification, scrollController: scrollController, squeeze: squeeze, itemExtent: itemExtent, onSelectedItemChanged: onSelectedItemChanged, selectionOverlay: selectionOverlay, looping: looping,);
+  Widget cupertinoPicker({Key? key, double diameterRatio = _kDefaultDiameterRatio, Color? backgroundColor, double offAxisFraction = 0.0, bool useMagnifier = false, double magnification = 1.0, FixedExtentScrollController? scrollController, double squeeze = _kSqueeze, required double itemExtent, required ValueChanged<int> onSelectedItemChanged, Widget? selectionOverlay = const CupertinoPickerDefaultSelectionOverlay(), bool looping = false,}) =>
+    CupertinoPicker(children: this, key: key, diameterRatio: diameterRatio, backgroundColor: backgroundColor, offAxisFraction: offAxisFraction, useMagnifier: useMagnifier, magnification: magnification, scrollController: scrollController, squeeze: squeeze, itemExtent: itemExtent, onSelectedItemChanged: onSelectedItemChanged, selectionOverlay: selectionOverlay, looping: looping,);
 
-  Widget cupertinoListSection({Widget? header, Widget? footer, EdgeInsetsGeometry margin = _kDefaultRowsMargin, Color backgroundColor = CupertinoColors.systemGroupedBackground, BoxDecoration? decoration, Clip clipBehavior = Clip.none, double dividerMargin = _kBaseDividerMargin, double? additionalDividerMargin, double? topMargin = _kMarginTop, bool hasLeading = true, Color? separatorColor,}) =>
-    CupertinoListSection(children: this, header: header, footer: footer, margin: margin, backgroundColor: backgroundColor, decoration: decoration, clipBehavior: clipBehavior, dividerMargin: dividerMargin, additionalDividerMargin: additionalDividerMargin, topMargin: topMargin, hasLeading: hasLeading, separatorColor: separatorColor,);
+  Widget cupertinoListSection({Key? key, Widget? header, Widget? footer, EdgeInsetsGeometry margin = _kDefaultRowsMargin, Color backgroundColor = CupertinoColors.systemGroupedBackground, BoxDecoration? decoration, Clip clipBehavior = Clip.none, double dividerMargin = _kBaseDividerMargin, double? additionalDividerMargin, double? topMargin = _kMarginTop, bool hasLeading = true, Color? separatorColor,}) =>
+    CupertinoListSection(children: this, key: key, header: header, footer: footer, margin: margin, backgroundColor: backgroundColor, decoration: decoration, clipBehavior: clipBehavior, dividerMargin: dividerMargin, additionalDividerMargin: additionalDividerMargin, topMargin: topMargin, hasLeading: hasLeading, separatorColor: separatorColor,);
 
-  Widget cupertinoListSectioninsetGrouped({Widget? header, Widget? footer, EdgeInsetsGeometry? margin, Color backgroundColor = CupertinoColors.systemGroupedBackground, BoxDecoration? decoration, Clip clipBehavior = Clip.hardEdge, double dividerMargin = _kInsetDividerMargin, double? additionalDividerMargin, double? topMargin, bool hasLeading = true, Color? separatorColor,}) =>
-    CupertinoListSection.insetGrouped(children: this, header: header, footer: footer, margin: margin, backgroundColor: backgroundColor, decoration: decoration, clipBehavior: clipBehavior, dividerMargin: dividerMargin, additionalDividerMargin: additionalDividerMargin, topMargin: topMargin, hasLeading: hasLeading, separatorColor: separatorColor,);
+  Widget cupertinoListSectioninsetGrouped({Key? key, Widget? header, Widget? footer, EdgeInsetsGeometry? margin, Color backgroundColor = CupertinoColors.systemGroupedBackground, BoxDecoration? decoration, Clip clipBehavior = Clip.hardEdge, double dividerMargin = _kInsetDividerMargin, double? additionalDividerMargin, double? topMargin, bool hasLeading = true, Color? separatorColor,}) =>
+    CupertinoListSection.insetGrouped(children: this, key: key, header: header, footer: footer, margin: margin, backgroundColor: backgroundColor, decoration: decoration, clipBehavior: clipBehavior, dividerMargin: dividerMargin, additionalDividerMargin: additionalDividerMargin, topMargin: topMargin, hasLeading: hasLeading, separatorColor: separatorColor,);
 
-  Widget cupertinoAdaptiveTextSelectionToolbar({required TextSelectionToolbarAnchors anchors,}) =>
-    CupertinoAdaptiveTextSelectionToolbar(children: this, anchors: anchors,);
+  Widget cupertinoAdaptiveTextSelectionToolbar({Key? key, required TextSelectionToolbarAnchors anchors,}) =>
+    CupertinoAdaptiveTextSelectionToolbar(children: this, key: key, anchors: anchors,);
 
-  Widget cupertinoFormSection({Widget? header, Widget? footer, EdgeInsetsGeometry margin = EdgeInsets.zero, Color backgroundColor = CupertinoColors.systemGroupedBackground, BoxDecoration? decoration, Clip clipBehavior = Clip.none,}) =>
-    CupertinoFormSection(children: this, header: header, footer: footer, margin: margin, backgroundColor: backgroundColor, decoration: decoration, clipBehavior: clipBehavior,);
+  Widget cupertinoFormSection({Key? key, Widget? header, Widget? footer, EdgeInsetsGeometry margin = EdgeInsets.zero, Color backgroundColor = CupertinoColors.systemGroupedBackground, BoxDecoration? decoration, Clip clipBehavior = Clip.none,}) =>
+    CupertinoFormSection(children: this, key: key, header: header, footer: footer, margin: margin, backgroundColor: backgroundColor, decoration: decoration, clipBehavior: clipBehavior,);
 
-  Widget cupertinoFormSectioninsetGrouped({Widget? header, Widget? footer, EdgeInsetsGeometry margin = _kFormDefaultInsetGroupedRowsMargin, Color backgroundColor = CupertinoColors.systemGroupedBackground, BoxDecoration? decoration, Clip clipBehavior = Clip.none,}) =>
-    CupertinoFormSection.insetGrouped(children: this, header: header, footer: footer, margin: margin, backgroundColor: backgroundColor, decoration: decoration, clipBehavior: clipBehavior,);
+  Widget cupertinoFormSectioninsetGrouped({Key? key, Widget? header, Widget? footer, EdgeInsetsGeometry margin = _kFormDefaultInsetGroupedRowsMargin, Color backgroundColor = CupertinoColors.systemGroupedBackground, BoxDecoration? decoration, Clip clipBehavior = Clip.none,}) =>
+    CupertinoFormSection.insetGrouped(children: this, key: key, header: header, footer: footer, margin: margin, backgroundColor: backgroundColor, decoration: decoration, clipBehavior: clipBehavior,);
 
-  Widget aboutDialog({String? applicationName, String? applicationVersion, Widget? applicationIcon, String? applicationLegalese,}) =>
-    AboutDialog(children: this, applicationName: applicationName, applicationVersion: applicationVersion, applicationIcon: applicationIcon, applicationLegalese: applicationLegalese,);
+  Widget aboutDialog({Key? key, String? applicationName, String? applicationVersion, Widget? applicationIcon, String? applicationLegalese,}) =>
+    AboutDialog(children: this, key: key, applicationName: applicationName, applicationVersion: applicationVersion, applicationIcon: applicationIcon, applicationLegalese: applicationLegalese,);
 
-  Widget buttonBar({MainAxisAlignment? alignment, MainAxisSize? mainAxisSize, ButtonTextTheme? buttonTextTheme, double? buttonMinWidth, double? buttonHeight, EdgeInsetsGeometry? buttonPadding, bool? buttonAlignedDropdown, ButtonBarLayoutBehavior? layoutBehavior, VerticalDirection? overflowDirection, double? overflowButtonSpacing,}) =>
-    ButtonBar(children: this, alignment: alignment, mainAxisSize: mainAxisSize, buttonTextTheme: buttonTextTheme, buttonMinWidth: buttonMinWidth, buttonHeight: buttonHeight, buttonPadding: buttonPadding, buttonAlignedDropdown: buttonAlignedDropdown, layoutBehavior: layoutBehavior, overflowDirection: overflowDirection, overflowButtonSpacing: overflowButtonSpacing,);
+  Widget buttonBar({Key? key, MainAxisAlignment? alignment, MainAxisSize? mainAxisSize, ButtonTextTheme? buttonTextTheme, double? buttonMinWidth, double? buttonHeight, EdgeInsetsGeometry? buttonPadding, bool? buttonAlignedDropdown, ButtonBarLayoutBehavior? layoutBehavior, VerticalDirection? overflowDirection, double? overflowButtonSpacing,}) =>
+    ButtonBar(children: this, key: key, alignment: alignment, mainAxisSize: mainAxisSize, buttonTextTheme: buttonTextTheme, buttonMinWidth: buttonMinWidth, buttonHeight: buttonHeight, buttonPadding: buttonPadding, buttonAlignedDropdown: buttonAlignedDropdown, layoutBehavior: layoutBehavior, overflowDirection: overflowDirection, overflowButtonSpacing: overflowButtonSpacing,);
 
-  Widget reorderableListView({required ReorderCallback onReorder, void Function(int index)? onReorderStart, void Function(int index)? onReorderEnd, double? itemExtent, ItemExtentBuilder? itemExtentBuilder, Widget? prototypeItem, ReorderItemProxyDecorator? proxyDecorator, bool buildDefaultDragHandles = true, EdgeInsets? padding, Widget? header, Widget? footer, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController? scrollController, bool? primary, ScrollPhysics? physics, bool shrinkWrap = false, double anchor = 0.0, double? cacheExtent, DragStartBehavior dragStartBehavior = DragStartBehavior.start, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual, String? restorationId, Clip clipBehavior = Clip.hardEdge, double? autoScrollerVelocityScalar,}) =>
-    ReorderableListView(children: this, onReorder: onReorder, onReorderStart: onReorderStart, onReorderEnd: onReorderEnd, itemExtent: itemExtent, itemExtentBuilder: itemExtentBuilder, prototypeItem: prototypeItem, proxyDecorator: proxyDecorator, buildDefaultDragHandles: buildDefaultDragHandles, padding: padding, header: header, footer: footer, scrollDirection: scrollDirection, reverse: reverse, scrollController: scrollController, primary: primary, physics: physics, shrinkWrap: shrinkWrap, anchor: anchor, cacheExtent: cacheExtent, dragStartBehavior: dragStartBehavior, keyboardDismissBehavior: keyboardDismissBehavior, restorationId: restorationId, clipBehavior: clipBehavior, autoScrollerVelocityScalar: autoScrollerVelocityScalar,);
+  Widget reorderableListView({Key? key, required ReorderCallback onReorder, void Function(int index)? onReorderStart, void Function(int index)? onReorderEnd, double? itemExtent, ItemExtentBuilder? itemExtentBuilder, Widget? prototypeItem, ReorderItemProxyDecorator? proxyDecorator, bool buildDefaultDragHandles = true, EdgeInsets? padding, Widget? header, Widget? footer, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController? scrollController, bool? primary, ScrollPhysics? physics, bool shrinkWrap = false, double anchor = 0.0, double? cacheExtent, DragStartBehavior dragStartBehavior = DragStartBehavior.start, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual, String? restorationId, Clip clipBehavior = Clip.hardEdge, double? autoScrollerVelocityScalar,}) =>
+    ReorderableListView(children: this, key: key, onReorder: onReorder, onReorderStart: onReorderStart, onReorderEnd: onReorderEnd, itemExtent: itemExtent, itemExtentBuilder: itemExtentBuilder, prototypeItem: prototypeItem, proxyDecorator: proxyDecorator, buildDefaultDragHandles: buildDefaultDragHandles, padding: padding, header: header, footer: footer, scrollDirection: scrollDirection, reverse: reverse, scrollController: scrollController, primary: primary, physics: physics, shrinkWrap: shrinkWrap, anchor: anchor, cacheExtent: cacheExtent, dragStartBehavior: dragStartBehavior, keyboardDismissBehavior: keyboardDismissBehavior, restorationId: restorationId, clipBehavior: clipBehavior, autoScrollerVelocityScalar: autoScrollerVelocityScalar,);
 
-  Widget desktopTextSelectionToolbar({required Offset anchor,}) =>
-    DesktopTextSelectionToolbar(children: this, anchor: anchor,);
+  Widget desktopTextSelectionToolbar({Key? key, required Offset anchor,}) =>
+    DesktopTextSelectionToolbar(children: this, key: key, anchor: anchor,);
 
-  Widget navigationDrawer({Color? backgroundColor, Color? shadowColor, Color? surfaceTintColor, double? elevation, Color? indicatorColor, ShapeBorder? indicatorShape, ValueChanged<int>? onDestinationSelected, int? selectedIndex = 0, EdgeInsetsGeometry tilePadding = const EdgeInsets.symmetric(horizontal: 12.0),}) =>
-    NavigationDrawer(children: this, backgroundColor: backgroundColor, shadowColor: shadowColor, surfaceTintColor: surfaceTintColor, elevation: elevation, indicatorColor: indicatorColor, indicatorShape: indicatorShape, onDestinationSelected: onDestinationSelected, selectedIndex: selectedIndex, tilePadding: tilePadding,);
+  Widget navigationDrawer({Key? key, Color? backgroundColor, Color? shadowColor, Color? surfaceTintColor, double? elevation, Color? indicatorColor, ShapeBorder? indicatorShape, ValueChanged<int>? onDestinationSelected, int? selectedIndex = 0, EdgeInsetsGeometry tilePadding = const EdgeInsets.symmetric(horizontal: 12.0),}) =>
+    NavigationDrawer(children: this, key: key, backgroundColor: backgroundColor, shadowColor: shadowColor, surfaceTintColor: surfaceTintColor, elevation: elevation, indicatorColor: indicatorColor, indicatorShape: indicatorShape, onDestinationSelected: onDestinationSelected, selectedIndex: selectedIndex, tilePadding: tilePadding,);
 
-  Widget carouselView({EdgeInsets? padding, Color? backgroundColor, double? elevation, ShapeBorder? shape, WidgetStateProperty<Color?>? overlayColor, bool itemSnapping = false, double shrinkExtent = 0.0, CarouselController? controller, Axis scrollDirection = Axis.horizontal, bool reverse = false, ValueChanged<int>? onTap, bool enableSplash = true, required double itemExtent,}) =>
-    CarouselView(children: this, padding: padding, backgroundColor: backgroundColor, elevation: elevation, shape: shape, overlayColor: overlayColor, itemSnapping: itemSnapping, shrinkExtent: shrinkExtent, controller: controller, scrollDirection: scrollDirection, reverse: reverse, onTap: onTap, enableSplash: enableSplash, itemExtent: itemExtent,);
+  Widget carouselView({Key? key, EdgeInsets? padding, Color? backgroundColor, double? elevation, ShapeBorder? shape, WidgetStateProperty<Color?>? overlayColor, bool itemSnapping = false, double shrinkExtent = 0.0, CarouselController? controller, Axis scrollDirection = Axis.horizontal, bool reverse = false, ValueChanged<int>? onTap, bool enableSplash = true, required double itemExtent,}) =>
+    CarouselView(children: this, key: key, padding: padding, backgroundColor: backgroundColor, elevation: elevation, shape: shape, overlayColor: overlayColor, itemSnapping: itemSnapping, shrinkExtent: shrinkExtent, controller: controller, scrollDirection: scrollDirection, reverse: reverse, onTap: onTap, enableSplash: enableSplash, itemExtent: itemExtent,);
 
-  Widget carouselViewweighted({EdgeInsets? padding, Color? backgroundColor, double? elevation, ShapeBorder? shape, WidgetStateProperty<Color?>? overlayColor, bool itemSnapping = false, double shrinkExtent = 0.0, CarouselController? controller, Axis scrollDirection = Axis.horizontal, bool reverse = false, bool consumeMaxWeight = true, ValueChanged<int>? onTap, bool enableSplash = true, required List<int> flexWeights,}) =>
-    CarouselView.weighted(children: this, padding: padding, backgroundColor: backgroundColor, elevation: elevation, shape: shape, overlayColor: overlayColor, itemSnapping: itemSnapping, shrinkExtent: shrinkExtent, controller: controller, scrollDirection: scrollDirection, reverse: reverse, consumeMaxWeight: consumeMaxWeight, onTap: onTap, enableSplash: enableSplash, flexWeights: flexWeights,);
+  Widget carouselViewweighted({Key? key, EdgeInsets? padding, Color? backgroundColor, double? elevation, ShapeBorder? shape, WidgetStateProperty<Color?>? overlayColor, bool itemSnapping = false, double shrinkExtent = 0.0, CarouselController? controller, Axis scrollDirection = Axis.horizontal, bool reverse = false, bool consumeMaxWeight = true, ValueChanged<int>? onTap, bool enableSplash = true, required List<int> flexWeights,}) =>
+    CarouselView.weighted(children: this, key: key, padding: padding, backgroundColor: backgroundColor, elevation: elevation, shape: shape, overlayColor: overlayColor, itemSnapping: itemSnapping, shrinkExtent: shrinkExtent, controller: controller, scrollDirection: scrollDirection, reverse: reverse, consumeMaxWeight: consumeMaxWeight, onTap: onTap, enableSplash: enableSplash, flexWeights: flexWeights,);
 
-  Widget menuBar({MenuStyle? style, Clip clipBehavior = Clip.none, MenuController? controller,}) =>
-    MenuBar(children: this, style: style, clipBehavior: clipBehavior, controller: controller,);
+  Widget menuBar({Key? key, MenuStyle? style, Clip clipBehavior = Clip.none, MenuController? controller,}) =>
+    MenuBar(children: this, key: key, style: style, clipBehavior: clipBehavior, controller: controller,);
 
-  Widget simpleDialog({Widget? title, EdgeInsetsGeometry titlePadding = const EdgeInsets.fromLTRB(24.0, 24.0, 24.0, 0.0), TextStyle? titleTextStyle, EdgeInsetsGeometry contentPadding = const EdgeInsets.fromLTRB(0.0, 12.0, 0.0, 16.0), Color? backgroundColor, double? elevation, Color? shadowColor, Color? surfaceTintColor, String? semanticLabel, EdgeInsets? insetPadding, Clip? clipBehavior, ShapeBorder? shape, AlignmentGeometry? alignment,}) =>
-    SimpleDialog(children: this, title: title, titlePadding: titlePadding, titleTextStyle: titleTextStyle, contentPadding: contentPadding, backgroundColor: backgroundColor, elevation: elevation, shadowColor: shadowColor, surfaceTintColor: surfaceTintColor, semanticLabel: semanticLabel, insetPadding: insetPadding, clipBehavior: clipBehavior, shape: shape, alignment: alignment,);
+  Widget simpleDialog({Key? key, Widget? title, EdgeInsetsGeometry titlePadding = const EdgeInsets.fromLTRB(24.0, 24.0, 24.0, 0.0), TextStyle? titleTextStyle, EdgeInsetsGeometry contentPadding = const EdgeInsets.fromLTRB(0.0, 12.0, 0.0, 16.0), Color? backgroundColor, double? elevation, Color? shadowColor, Color? surfaceTintColor, String? semanticLabel, EdgeInsets? insetPadding, Clip? clipBehavior, ShapeBorder? shape, AlignmentGeometry? alignment,}) =>
+    SimpleDialog(children: this, key: key, title: title, titlePadding: titlePadding, titleTextStyle: titleTextStyle, contentPadding: contentPadding, backgroundColor: backgroundColor, elevation: elevation, shadowColor: shadowColor, surfaceTintColor: surfaceTintColor, semanticLabel: semanticLabel, insetPadding: insetPadding, clipBehavior: clipBehavior, shape: shape, alignment: alignment,);
 
-  Widget tabBarView({TabController? controller, ScrollPhysics? physics, DragStartBehavior dragStartBehavior = DragStartBehavior.start, double viewportFraction = 1.0, Clip clipBehavior = Clip.hardEdge,}) =>
-    TabBarView(children: this, controller: controller, physics: physics, dragStartBehavior: dragStartBehavior, viewportFraction: viewportFraction, clipBehavior: clipBehavior,);
+  Widget tabBarView({Key? key, TabController? controller, ScrollPhysics? physics, DragStartBehavior dragStartBehavior = DragStartBehavior.start, double viewportFraction = 1.0, Clip clipBehavior = Clip.hardEdge,}) =>
+    TabBarView(children: this, key: key, controller: controller, physics: physics, dragStartBehavior: dragStartBehavior, viewportFraction: viewportFraction, clipBehavior: clipBehavior,);
 
-  Widget expansionTile({Widget? leading, required Widget title, Widget? subtitle, ValueChanged<bool>? onExpansionChanged, Widget? trailing, bool showTrailingIcon = true, bool initiallyExpanded = false, bool maintainState = false, EdgeInsetsGeometry? tilePadding, CrossAxisAlignment? expandedCrossAxisAlignment, Alignment? expandedAlignment, EdgeInsetsGeometry? childrenPadding, Color? backgroundColor, Color? collapsedBackgroundColor, Color? textColor, Color? collapsedTextColor, Color? iconColor, Color? collapsedIconColor, ShapeBorder? shape, ShapeBorder? collapsedShape, Clip? clipBehavior, ListTileControlAffinity? controlAffinity, ExpansionTileController? controller, bool? dense, VisualDensity? visualDensity, double? minTileHeight, bool? enableFeedback = true, bool enabled = true, AnimationStyle? expansionAnimationStyle, bool internalAddSemanticForOnTap = false,}) =>
-    ExpansionTile(children: this, leading: leading, title: title, subtitle: subtitle, onExpansionChanged: onExpansionChanged, trailing: trailing, showTrailingIcon: showTrailingIcon, initiallyExpanded: initiallyExpanded, maintainState: maintainState, tilePadding: tilePadding, expandedCrossAxisAlignment: expandedCrossAxisAlignment, expandedAlignment: expandedAlignment, childrenPadding: childrenPadding, backgroundColor: backgroundColor, collapsedBackgroundColor: collapsedBackgroundColor, textColor: textColor, collapsedTextColor: collapsedTextColor, iconColor: iconColor, collapsedIconColor: collapsedIconColor, shape: shape, collapsedShape: collapsedShape, clipBehavior: clipBehavior, controlAffinity: controlAffinity, controller: controller, dense: dense, visualDensity: visualDensity, minTileHeight: minTileHeight, enableFeedback: enableFeedback, enabled: enabled, expansionAnimationStyle: expansionAnimationStyle, internalAddSemanticForOnTap: internalAddSemanticForOnTap,);
+  Widget expansionTile({Key? key, Widget? leading, required Widget title, Widget? subtitle, ValueChanged<bool>? onExpansionChanged, Widget? trailing, bool showTrailingIcon = true, bool initiallyExpanded = false, bool maintainState = false, EdgeInsetsGeometry? tilePadding, CrossAxisAlignment? expandedCrossAxisAlignment, Alignment? expandedAlignment, EdgeInsetsGeometry? childrenPadding, Color? backgroundColor, Color? collapsedBackgroundColor, Color? textColor, Color? collapsedTextColor, Color? iconColor, Color? collapsedIconColor, ShapeBorder? shape, ShapeBorder? collapsedShape, Clip? clipBehavior, ListTileControlAffinity? controlAffinity, ExpansionTileController? controller, bool? dense, VisualDensity? visualDensity, double? minTileHeight, bool? enableFeedback = true, bool enabled = true, AnimationStyle? expansionAnimationStyle, bool internalAddSemanticForOnTap = false,}) =>
+    ExpansionTile(children: this, key: key, leading: leading, title: title, subtitle: subtitle, onExpansionChanged: onExpansionChanged, trailing: trailing, showTrailingIcon: showTrailingIcon, initiallyExpanded: initiallyExpanded, maintainState: maintainState, tilePadding: tilePadding, expandedCrossAxisAlignment: expandedCrossAxisAlignment, expandedAlignment: expandedAlignment, childrenPadding: childrenPadding, backgroundColor: backgroundColor, collapsedBackgroundColor: collapsedBackgroundColor, textColor: textColor, collapsedTextColor: collapsedTextColor, iconColor: iconColor, collapsedIconColor: collapsedIconColor, shape: shape, collapsedShape: collapsedShape, clipBehavior: clipBehavior, controlAffinity: controlAffinity, controller: controller, dense: dense, visualDensity: visualDensity, minTileHeight: minTileHeight, enableFeedback: enableFeedback, enabled: enabled, expansionAnimationStyle: expansionAnimationStyle, internalAddSemanticForOnTap: internalAddSemanticForOnTap,);
 
-  Widget adaptiveTextSelectionToolbar({required TextSelectionToolbarAnchors anchors,}) =>
-    AdaptiveTextSelectionToolbar(children: this, anchors: anchors,);
+  Widget adaptiveTextSelectionToolbar({Key? key, required TextSelectionToolbarAnchors anchors,}) =>
+    AdaptiveTextSelectionToolbar(children: this, key: key, anchors: anchors,);
 
-  Widget toggleButtons({required List<bool> isSelected, void Function(int index)? onPressed, MouseCursor? mouseCursor, MaterialTapTargetSize? tapTargetSize, TextStyle? textStyle, BoxConstraints? constraints, Color? color, Color? selectedColor, Color? disabledColor, Color? fillColor, Color? focusColor, Color? highlightColor, Color? hoverColor, Color? splashColor, List<FocusNode>? focusNodes, bool renderBorder = true, Color? borderColor, Color? selectedBorderColor, Color? disabledBorderColor, BorderRadius? borderRadius, double? borderWidth, Axis direction = Axis.horizontal, VerticalDirection verticalDirection = VerticalDirection.down,}) =>
-    ToggleButtons(children: this, isSelected: isSelected, onPressed: onPressed, mouseCursor: mouseCursor, tapTargetSize: tapTargetSize, textStyle: textStyle, constraints: constraints, color: color, selectedColor: selectedColor, disabledColor: disabledColor, fillColor: fillColor, focusColor: focusColor, highlightColor: highlightColor, hoverColor: hoverColor, splashColor: splashColor, focusNodes: focusNodes, renderBorder: renderBorder, borderColor: borderColor, selectedBorderColor: selectedBorderColor, disabledBorderColor: disabledBorderColor, borderRadius: borderRadius, borderWidth: borderWidth, direction: direction, verticalDirection: verticalDirection,);
+  Widget toggleButtons({Key? key, required List<bool> isSelected, void Function(int index)? onPressed, MouseCursor? mouseCursor, MaterialTapTargetSize? tapTargetSize, TextStyle? textStyle, BoxConstraints? constraints, Color? color, Color? selectedColor, Color? disabledColor, Color? fillColor, Color? focusColor, Color? highlightColor, Color? hoverColor, Color? splashColor, List<FocusNode>? focusNodes, bool renderBorder = true, Color? borderColor, Color? selectedBorderColor, Color? disabledBorderColor, BorderRadius? borderRadius, double? borderWidth, Axis direction = Axis.horizontal, VerticalDirection verticalDirection = VerticalDirection.down,}) =>
+    ToggleButtons(children: this, key: key, isSelected: isSelected, onPressed: onPressed, mouseCursor: mouseCursor, tapTargetSize: tapTargetSize, textStyle: textStyle, constraints: constraints, color: color, selectedColor: selectedColor, disabledColor: disabledColor, fillColor: fillColor, focusColor: focusColor, highlightColor: highlightColor, hoverColor: hoverColor, splashColor: splashColor, focusNodes: focusNodes, renderBorder: renderBorder, borderColor: borderColor, selectedBorderColor: selectedBorderColor, disabledBorderColor: disabledBorderColor, borderRadius: borderRadius, borderWidth: borderWidth, direction: direction, verticalDirection: verticalDirection,);
 
   Widget customMultiChildLayout({Key? key, required MultiChildLayoutDelegate delegate,}) =>
     CustomMultiChildLayout(children: this, key: key, delegate: delegate,);
