@@ -1,0 +1,18 @@
+name: flutter_widget_skewer
+description: A Dart code generator that makes Flutter widgets chainable like skewers. With widget_skewer, you can build widget trees with extension methods instead of nesting braces.
+version: 0.0.1
+repository: https://github.com/zyzdev/flutter_widget_skewer
+
+topics:
+  - build-runner
+  - codegen
+
+environment:
+  sdk: ^2.19.0
+
+dependencies:
+  analyzer: ^6.0.0
+  build_runner: ^2.0.0
+  build: ^2.3.1
+  collection: ^1.15.0
+  path: ^1.8.0
